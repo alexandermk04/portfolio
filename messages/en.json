@@ -1,0 +1,149 @@
+{
+  "Meta": {
+    "title": "Alexander Kranz – Data Science Student & Working Student in Hamburg",
+    "description": "Personal website of Alexander Kranz: Data Science student in Hamburg, working student at Deutsche Bahn, scholarship holder of the Studienstiftung, marathon runner and hackathon enthusiast.",
+    "ogAlt": "Alexander Kranz – Data Science student in Hamburg"
+  },
+  "Nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "interests": "Interests",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm",
+    "name": "Alexander Kranz",
+    "roles": [
+      "Data Science Student",
+      "Working Student at Deutsche Bahn",
+      "Marathon Runner",
+      "Hackathon Enthusiast"
+    ],
+    "tagline": "I study Data Science in Hamburg, connecting data, technology and curiosity – at work, in code and out on the running track.",
+    "ctaContact": "Get in touch",
+    "ctaLinkedin": "LinkedIn",
+    "scroll": "Learn more"
+  },
+  "About": {
+    "heading": "About me",
+    "lead": "I'm passionate about data – and just as much about the people and stories behind it.",
+    "paragraphs": [
+      "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions – and how technology can improve people's everyday lives.",
+      "Back in school I took part in Jugend forscht and Jugend debattiert, where I learned to develop ideas and stand up for them. After graduating, I spent a voluntary year in Ecuador teaching English.",
+      "Today I gain hands-on experience as a working student – previously at Otto and currently at Deutsche Bahn. I'm supported by a scholarship from the Studienstiftung des Deutschen Volkes."
+    ],
+    "facts": [
+      { "label": "Based in", "value": "Hamburg" },
+      { "label": "Studies", "value": "B.Sc. Data Science" },
+      { "label": "Currently", "value": "Working Student @ Deutsche Bahn" },
+      { "label": "Scholarship", "value": "Studienstiftung des Deutschen Volkes" }
+    ]
+  },
+  "Experience": {
+    "heading": "Experience",
+    "subheading": "The stations that shaped me.",
+    "items": [
+      {
+        "period": "2023 – present",
+        "role": "Working Student",
+        "org": "Deutsche Bahn",
+        "location": "Hamburg",
+        "description": "Working on data-driven questions around mobility and infrastructure.",
+        "tags": ["Data Science", "Python", "Analytics"]
+      },
+      {
+        "period": "2022 – 2023",
+        "role": "Working Student",
+        "org": "Otto",
+        "location": "Hamburg",
+        "description": "Supporting the data-driven e-commerce environment of one of Europe's largest online retailers.",
+        "tags": ["E-Commerce", "Data", "SQL"]
+      },
+      {
+        "period": "since 2022",
+        "role": "B.Sc. Data Science",
+        "org": "University in Hamburg",
+        "location": "Hamburg",
+        "description": "Degree focused on statistics, machine learning and programming.",
+        "tags": ["Statistics", "Machine Learning", "Mathematics"]
+      },
+      {
+        "period": "since 2022",
+        "role": "Scholarship Holder",
+        "org": "Studienstiftung des Deutschen Volkes",
+        "location": "Germany",
+        "description": "Supported by Germany's largest and oldest organisation for the promotion of gifted students.",
+        "tags": ["Scholarship", "Network"]
+      },
+      {
+        "period": "2021 – 2022",
+        "role": "Volunteer / English Teacher",
+        "org": "Voluntary year in Ecuador",
+        "location": "Ecuador",
+        "description": "A year abroad: teaching English, intercultural experience and personal growth.",
+        "tags": ["Education", "Spanish", "Intercultural"]
+      }
+    ]
+  },
+  "Projects": {
+    "heading": "Projects & Competitions",
+    "subheading": "Where I turn ideas into action.",
+    "items": [
+      {
+        "title": "Hackathons",
+        "description": "Participation in numerous hackathons – from idea to working prototype in just a few hours, often in a team and under time pressure.",
+        "tags": ["Prototyping", "Teamwork", "Rapid Development"]
+      },
+      {
+        "title": "Jugend forscht",
+        "description": "Independent research projects during school – scientific work, experimentation and presentation.",
+        "tags": ["Research", "STEM"]
+      },
+      {
+        "title": "Jugend debattiert",
+        "description": "A structured debating competition – argumentation, rhetoric and defending a point of view.",
+        "tags": ["Rhetoric", "Argumentation"]
+      }
+    ]
+  },
+  "Interests": {
+    "heading": "More than data",
+    "subheading": "What drives me beyond my studies.",
+    "stats": [
+      { "value": "2", "label": "marathons run" },
+      { "value": "42.195 km", "label": "per marathon" },
+      { "value": "∞", "label": "curiosity" }
+    ],
+    "items": [
+      {
+        "title": "Running & Endurance",
+        "description": "Two marathons under my belt. Running teaches me discipline, patience and the confidence to reach big goals one step at a time."
+      },
+      {
+        "title": "Hackathons & Coding",
+        "description": "I love building something tangible in a short amount of time and tinkering on solutions together with others."
+      },
+      {
+        "title": "Learning & Languages",
+        "description": "Thanks to my year in Ecuador I speak Spanish and value other cultures and perspectives."
+      }
+    ]
+  },
+  "Contact": {
+    "heading": "Let's talk",
+    "text": "Whether it's an exciting project, a working-student role or simply a good conversation – I'd love to hear from you.",
+    "emailLabel": "Send an email",
+    "linkedinLabel": "Connect on LinkedIn",
+    "githubLabel": "View GitHub"
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js & Tailwind CSS."
+  },
+  "LanguageToggle": {
+    "label": "Switch language",
+    "de": "German",
+    "en": "English"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "Meta": {
+    "title": "Alexander Kranz – Data Science Student & Werkstudent in Hamburg",
+    "description": "Persönliche Website von Alexander Kranz: Data-Science-Student in Hamburg, Werkstudent bei der Deutschen Bahn, Stipendiat der Studienstiftung, Marathonläufer und Hackathon-Enthusiast.",
+    "ogAlt": "Alexander Kranz – Data Science Student in Hamburg"
+  },
+  "Nav": {
+    "about": "Über mich",
+    "experience": "Werdegang",
+    "projects": "Projekte",
+    "interests": "Interessen",
+    "contact": "Kontakt"
+  },
+  "Hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Alexander Kranz",
+    "roles": [
+      "Data-Science-Student",
+      "Werkstudent bei der Deutschen Bahn",
+      "Marathonläufer",
+      "Hackathon-Enthusiast"
+    ],
+    "tagline": "Ich studiere Data Science in Hamburg und verbinde Daten, Technologie und Neugier – auf der Arbeit, im Code und auf der Laufstrecke.",
+    "ctaContact": "Kontakt aufnehmen",
+    "ctaLinkedin": "LinkedIn",
+    "scroll": "Mehr erfahren"
+  },
+  "About": {
+    "heading": "Über mich",
+    "lead": "Daten begeistern mich – genauso wie die Menschen und Geschichten dahinter.",
+    "paragraphs": [
+      "Aufgewachsen in Ahrensburg, studiere ich heute Data Science im Bachelor in Hamburg. Mich fasziniert, wie aus Daten echte Entscheidungen werden – und wie Technologie den Alltag von Menschen verbessern kann.",
+      "Schon in der Schule habe ich bei Jugend forscht und Jugend debattiert mitgemacht und gelernt, Ideen zu entwickeln und zu vertreten. Nach dem Abitur bin ich für ein Freiwilliges Jahr nach Ecuador gegangen und habe dort Englisch unterrichtet.",
+      "Heute sammle ich als Werkstudent praktische Erfahrung, zuletzt bei Otto und aktuell bei der Deutschen Bahn. Gefördert werde ich von der Studienstiftung des Deutschen Volkes."
+    ],
+    "facts": [
+      { "label": "Wohnort", "value": "Hamburg" },
+      { "label": "Studium", "value": "B.Sc. Data Science" },
+      { "label": "Aktuell", "value": "Werkstudent @ Deutsche Bahn" },
+      { "label": "Förderung", "value": "Studienstiftung des Deutschen Volkes" }
+    ]
+  },
+  "Experience": {
+    "heading": "Werdegang",
+    "subheading": "Stationen, die mich geprägt haben.",
+    "items": [
+      {
+        "period": "2023 – heute",
+        "role": "Werkstudent",
+        "org": "Deutsche Bahn",
+        "location": "Hamburg",
+        "description": "Arbeit an datengetriebenen Fragestellungen rund um Mobilität und Infrastruktur.",
+        "tags": ["Data Science", "Python", "Analytics"]
+      },
+      {
+        "period": "2022 – 2023",
+        "role": "Werkstudent",
+        "org": "Otto",
+        "location": "Hamburg",
+        "description": "Unterstützung im datengetriebenen E-Commerce-Umfeld eines der größten Online-Händler Europas.",
+        "tags": ["E-Commerce", "Data", "SQL"]
+      },
+      {
+        "period": "seit 2022",
+        "role": "B.Sc. Data Science",
+        "org": "Universität in Hamburg",
+        "location": "Hamburg",
+        "description": "Studium mit Fokus auf Statistik, Machine Learning und Programmierung.",
+        "tags": ["Statistik", "Machine Learning", "Mathematik"]
+      },
+      {
+        "period": "seit 2022",
+        "role": "Stipendiat",
+        "org": "Studienstiftung des Deutschen Volkes",
+        "location": "Deutschland",
+        "description": "Förderung durch das größte und älteste Begabtenförderungswerk Deutschlands.",
+        "tags": ["Stipendium", "Netzwerk"]
+      },
+      {
+        "period": "2021 – 2022",
+        "role": "Freiwilliger / Englischlehrer",
+        "org": "Freiwilliges Jahr in Ecuador",
+        "location": "Ecuador",
+        "description": "Ein Jahr im Ausland: Englischunterricht, interkulturelle Erfahrung und persönliches Wachstum.",
+        "tags": ["Bildung", "Spanisch", "Interkulturell"]
+      }
+    ]
+  },
+  "Projects": {
+    "heading": "Projekte & Wettbewerbe",
+    "subheading": "Wo ich Ideen in die Tat umsetze.",
+    "items": [
+      {
+        "title": "Hackathons",
+        "description": "Teilnahme an zahlreichen Hackathons – von der Idee bis zum funktionierenden Prototyp in wenigen Stunden, oft im Team und unter Zeitdruck.",
+        "tags": ["Prototyping", "Teamwork", "Rapid Development"]
+      },
+      {
+        "title": "Jugend forscht",
+        "description": "Eigenständige Forschungsprojekte während der Schulzeit – wissenschaftliches Arbeiten, Experimentieren und Präsentieren.",
+        "tags": ["Forschung", "MINT"]
+      },
+      {
+        "title": "Jugend debattiert",
+        "description": "Wettbewerb im strukturierten Debattieren – Argumentation, Rhetorik und das Vertreten von Standpunkten.",
+        "tags": ["Rhetorik", "Argumentation"]
+      }
+    ]
+  },
+  "Interests": {
+    "heading": "Mehr als Daten",
+    "subheading": "Was mich neben dem Studium antreibt.",
+    "stats": [
+      { "value": "2", "label": "Marathons gelaufen" },
+      { "value": "42,195 km", "label": "pro Marathon" },
+      { "value": "∞", "label": "Neugier" }
+    ],
+    "items": [
+      {
+        "title": "Laufen & Ausdauer",
+        "description": "Zwei Marathons in den Beinen. Laufen lehrt mich Disziplin, Geduld und das Vertrauen, große Ziele Schritt für Schritt zu erreichen."
+      },
+      {
+        "title": "Hackathons & Coding",
+        "description": "Ich liebe es, in kurzer Zeit etwas Greifbares zu bauen und mit anderen an Lösungen zu tüfteln."
+      },
+      {
+        "title": "Lernen & Sprachen",
+        "description": "Durch mein Jahr in Ecuador spreche ich Spanisch und schätze andere Kulturen und Perspektiven."
+      }
+    ]
+  },
+  "Contact": {
+    "heading": "Lass uns sprechen",
+    "text": "Ob spannendes Projekt, Werkstudentenstelle oder einfach ein guter Austausch – ich freue mich, von dir zu hören.",
+    "emailLabel": "E-Mail schreiben",
+    "linkedinLabel": "Auf LinkedIn vernetzen",
+    "githubLabel": "GitHub ansehen"
+  },
+  "Footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "builtWith": "Gebaut mit Next.js & Tailwind CSS."
+  },
+  "LanguageToggle": {
+    "label": "Sprache wechseln",
+    "de": "Deutsch",
+    "en": "Englisch"
+  }
+}
