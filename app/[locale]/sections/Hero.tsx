@@ -37,9 +37,9 @@ export function Hero() {
       {/* Animated aurora background */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 grid-bg opacity-40" />
-        <div className="absolute -top-40 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-accent/30 blur-[120px] animate-aurora" />
-        <div className="absolute top-20 -right-20 h-[28rem] w-[28rem] rounded-full bg-accent-2/25 blur-[120px] animate-aurora [animation-delay:-6s]" />
-        <div className="absolute -bottom-24 left-10 h-[28rem] w-[28rem] rounded-full bg-accent-3/20 blur-[120px] animate-aurora [animation-delay:-12s]" />
+        <div className="absolute -top-40 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-accent/25 blur-[120px] animate-aurora" />
+        <div className="absolute top-20 -right-20 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-[120px] animate-aurora [animation-delay:-6s]" />
+        <div className="absolute -bottom-24 left-10 h-[28rem] w-[28rem] rounded-full bg-accent/10 blur-[120px] animate-aurora [animation-delay:-12s]" />
       </div>
 
       <motion.div
@@ -50,16 +50,17 @@ export function Hero() {
       >
         <motion.p
           variants={item}
-          className="text-sm font-semibold uppercase tracking-[0.25em] text-accent-2"
+          className="text-sm font-semibold uppercase tracking-[0.25em] text-accent"
         >
           {t("greeting")}
         </motion.p>
 
         <motion.h1
           variants={item}
-          className="mt-4 font-display text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl"
+          className="mt-4 font-display text-6xl font-extrabold leading-[0.95] tracking-tight text-fg sm:text-8xl lg:text-9xl"
         >
-          <span className="gradient-text">{t("name")}</span>
+          {t("shortName")}
+          <span className="text-accent">.</span>
         </motion.h1>
 
         <motion.div

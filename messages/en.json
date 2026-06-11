@@ -5,80 +5,111 @@
     "ogAlt": "Alexander Kranz – Data Science student in Hamburg"
   },
   "Nav": {
-    "about": "About",
+    "home": "Home",
     "experience": "Experience",
-    "projects": "Projects",
+    "hackathons": "Hackathons",
     "interests": "Interests",
     "contact": "Contact"
   },
   "Hero": {
-    "greeting": "Hi, I'm",
-    "name": "Alexander Kranz",
+    "greeting": "Moin, I'm",
+    "shortName": "Alex",
     "roles": [
       "Data Science Student",
       "Working Student at Deutsche Bahn",
       "Marathon Runner",
       "Hackathon Enthusiast"
     ],
-    "tagline": "I study Data Science in Hamburg, connecting data, technology and curiosity – at work, in code and out on the running track.",
+    "tagline": "Alexander Kranz, in full – I study Data Science in Hamburg, connecting data, technology and curiosity: at work, in code and out on the running track.",
     "ctaContact": "Get in touch",
     "ctaLinkedin": "LinkedIn",
     "scroll": "Learn more"
   },
-  "About": {
-    "heading": "About me",
-    "lead": "I'm passionate about data – and just as much about the people and stories behind it.",
-    "paragraphs": [
-      "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions – and how technology can improve people's everyday lives.",
-      "Back in school I took part in Jugend forscht and Jugend debattiert, where I learned to develop ideas and stand up for them. After graduating, I spent a voluntary year in Ecuador teaching English.",
-      "Today I gain hands-on experience as a working student – previously at Otto and currently at Deutsche Bahn. I'm supported by a scholarship from the Studienstiftung des Deutschen Volkes."
-    ],
+  "Home": {
+    "aboutLead": "I'm passionate about data – and just as much about the people and stories behind it.",
+    "aboutText": "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions – and how technology can improve people's everyday lives.",
     "facts": [
       { "label": "Based in", "value": "Hamburg" },
       { "label": "Studies", "value": "B.Sc. Data Science" },
       { "label": "Currently", "value": "Working Student @ Deutsche Bahn" },
       { "label": "Scholarship", "value": "Studienstiftung des Deutschen Volkes" }
-    ]
+    ],
+    "teasers": {
+      "heading": "Explore",
+      "experience": {
+        "title": "Experience",
+        "description": "My path so far – work and education as two parallel timelines, from Ahrensburg to Hamburg, via Ecuador.",
+        "cta": "View timeline"
+      },
+      "hackathons": {
+        "title": "Hackathons",
+        "description": "Quick prototypes, great teams, little sleep – the hackathons I've joined and where they took me.",
+        "cta": "See the hacks"
+      },
+      "interests": {
+        "title": "Beyond data",
+        "description": "Marathons, languages and everything else that keeps me curious away from the keyboard.",
+        "cta": "Explore interests"
+      }
+    }
   },
-  "Experience": {
+  "ExperiencePage": {
+    "meta": {
+      "title": "Experience – Alexander Kranz",
+      "description": "The path of Alexander Kranz: working student at Deutsche Bahn and Otto, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
+    },
     "heading": "Experience",
-    "subheading": "The stations that shaped me.",
+    "intro": "From school competitions to a voluntary year in Ecuador to working-student roles at Otto and Deutsche Bahn – these are the stations that shaped me, on two parallel tracks.",
+    "threads": {
+      "work": "Work",
+      "education": "Education & Growth"
+    },
     "items": [
       {
-        "period": "2023 – present",
-        "role": "Working Student",
+        "thread": "work",
+        "date": "2023 – present",
+        "start": "2023-07",
+        "title": "Working Student",
         "org": "Deutsche Bahn",
         "location": "Hamburg",
         "description": "Working on data-driven questions around mobility and infrastructure.",
         "tags": ["Data Science", "Python", "Analytics"]
       },
       {
-        "period": "2022 – 2023",
-        "role": "Working Student",
+        "thread": "work",
+        "date": "2022 – 2023",
+        "start": "2022-08",
+        "title": "Working Student",
         "org": "Otto",
         "location": "Hamburg",
         "description": "Supporting the data-driven e-commerce environment of one of Europe's largest online retailers.",
         "tags": ["E-Commerce", "Data", "SQL"]
       },
       {
-        "period": "since 2022",
-        "role": "B.Sc. Data Science",
+        "thread": "education",
+        "date": "since 2022",
+        "start": "2022-10",
+        "title": "B.Sc. Data Science",
         "org": "University in Hamburg",
         "location": "Hamburg",
         "description": "Degree focused on statistics, machine learning and programming.",
         "tags": ["Statistics", "Machine Learning", "Mathematics"]
       },
       {
-        "period": "since 2022",
-        "role": "Scholarship Holder",
+        "thread": "education",
+        "date": "since 2022",
+        "start": "2022-09",
+        "title": "Scholarship Holder",
         "org": "Studienstiftung des Deutschen Volkes",
         "location": "Germany",
         "description": "Supported by Germany's largest and oldest organisation for the promotion of gifted students.",
         "tags": ["Scholarship", "Network"]
       },
       {
-        "period": "2021 – 2022",
-        "role": "Volunteer / English Teacher",
+        "thread": "education",
+        "date": "2021 – 2022",
+        "start": "2021-08",
+        "title": "Volunteer / English Teacher",
         "org": "Voluntary year in Ecuador",
         "location": "Ecuador",
         "description": "A year abroad: teaching English, intercultural experience and personal growth.",
@@ -86,28 +117,73 @@
       }
     ]
   },
-  "Projects": {
-    "heading": "Projects & Competitions",
-    "subheading": "Where I turn ideas into action.",
+  "HackathonsPage": {
+    "meta": {
+      "title": "Hackathons – Alexander Kranz",
+      "description": "Hackathons Alexander Kranz has participated in – technologies, projects and locations across Europe."
+    },
+    "heading": "Hackathons",
+    "subheading": "From idea to working prototype in 24–48 hours.",
+    "placeholderNote": "// placeholder entries – real hackathons coming soon",
     "items": [
       {
-        "title": "Hackathons",
-        "description": "Participation in numerous hackathons – from idea to working prototype in just a few hours, often in a team and under time pressure.",
-        "tags": ["Prototyping", "Teamwork", "Rapid Development"]
+        "name": "Hack Hamburg",
+        "city": "hamburg",
+        "venue": "Hamburg",
+        "year": "2025",
+        "summary": "Built a real-time delay predictor for local transit.",
+        "tech": ["Python", "FastAPI", "React"]
       },
       {
-        "title": "Jugend forscht",
-        "description": "Independent research projects during school – scientific work, experimentation and presentation.",
-        "tags": ["Research", "STEM"]
+        "name": "HackaTUM",
+        "city": "munich",
+        "venue": "Munich",
+        "year": "2024",
+        "summary": "Prototyped a smart energy dashboard in 36 hours.",
+        "tech": ["TypeScript", "Next.js", "PostgreSQL"]
       },
       {
-        "title": "Jugend debattiert",
-        "description": "A structured debating competition – argumentation, rhetoric and defending a point of view.",
-        "tags": ["Rhetoric", "Argumentation"]
+        "name": "START Hack",
+        "city": "stgallen",
+        "venue": "St. Gallen",
+        "year": "2024",
+        "summary": "Tackled a sustainability case with a supply-chain CO₂ tracker.",
+        "tech": ["Python", "Streamlit", "scikit-learn"]
+      },
+      {
+        "name": "Bits & Bäume Hack",
+        "city": "berlin",
+        "venue": "Berlin",
+        "year": "2023",
+        "summary": "Hacked on open data for greener cities.",
+        "tech": ["Python", "Pandas", "Leaflet"]
       }
-    ]
+    ],
+    "map": {
+      "heading": "Where I've hacked",
+      "ariaLabel": "Map of Europe showing hackathon locations"
+    },
+    "earlier": {
+      "heading": "Earlier competitions",
+      "items": [
+        {
+          "title": "Jugend forscht",
+          "description": "Independent research projects during school – scientific work, experimentation and presentation.",
+          "tags": ["Research", "STEM"]
+        },
+        {
+          "title": "Jugend debattiert",
+          "description": "A structured debating competition – argumentation, rhetoric and defending a point of view.",
+          "tags": ["Rhetoric", "Argumentation"]
+        }
+      ]
+    }
   },
-  "Interests": {
+  "InterestsPage": {
+    "meta": {
+      "title": "Interests – Alexander Kranz",
+      "description": "What drives Alexander Kranz beyond data science: marathon running, languages, hackathons and an endless curiosity."
+    },
     "heading": "More than data",
     "subheading": "What drives me beyond my studies.",
     "stats": [
@@ -128,18 +204,51 @@
         "title": "Learning & Languages",
         "description": "Thanks to my year in Ecuador I speak Spanish and value other cultures and perspectives."
       }
-    ]
+    ],
+    "languages": {
+      "heading": "Languages",
+      "items": [
+        { "greeting": "Moin!", "name": "German", "level": "Native", "levelValue": 5 },
+        { "greeting": "Hello!", "name": "English", "level": "Fluent (C1)", "levelValue": 4 },
+        { "greeting": "¡Hola!", "name": "Spanish", "level": "Conversational (B2)", "levelValue": 3 }
+      ]
+    },
+    "marathons": {
+      "heading": "Marathons",
+      "note": "// placeholder cities & years",
+      "ariaLabel": "Map of Europe showing marathon locations",
+      "items": [
+        { "city": "hamburg", "label": "Haspa Marathon Hamburg", "year": "2024" },
+        { "city": "berlin", "label": "Berlin Marathon", "year": "2025" }
+      ]
+    }
   },
   "Contact": {
     "heading": "Let's talk",
     "text": "Whether it's an exciting project, a working-student role or simply a good conversation – I'd love to hear from you.",
     "emailLabel": "Send an email",
-    "linkedinLabel": "Connect on LinkedIn",
-    "githubLabel": "View GitHub"
+    "allOptions": "All contact options"
+  },
+  "ContactPage": {
+    "meta": {
+      "title": "Contact – Alexander Kranz",
+      "description": "Get in touch with Alexander Kranz – via email, LinkedIn or GitHub."
+    },
+    "heading": "Let's talk",
+    "intro": "Whether it's an exciting project, a working-student role or simply a good conversation – I'd love to hear from you. The fastest way is an email; I usually reply within a day or two.",
+    "photoAlt": "Portrait of Alexander Kranz",
+    "photoNote": "// add public/portrait.jpg to replace this placeholder",
+    "optionsHeading": "Where to reach me",
+    "options": [
+      { "id": "email", "label": "Send an email", "hint": "The fastest way to reach me" },
+      { "id": "linkedin", "label": "Connect on LinkedIn", "hint": "For professional topics and networking" },
+      { "id": "github", "label": "Browse my GitHub", "hint": "Code, experiments and side projects" }
+    ]
   },
   "Footer": {
     "rights": "All rights reserved.",
-    "builtWith": "Built with Next.js & Tailwind CSS."
+    "builtWith": "Built with Next.js & Tailwind CSS.",
+    "contactCta": "Let's talk"
   },
   "LanguageToggle": {
     "label": "Switch language",

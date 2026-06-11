@@ -1,18 +1,13 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { siteConfig } from "@/config/site";
 
 export function Contact() {
   const t = useTranslations("Contact");
-
-  const links = [
-    { label: t("emailLabel"), href: `mailto:${siteConfig.email}`, external: false },
-    { label: t("linkedinLabel"), href: siteConfig.linkedin, external: true },
-    { label: t("githubLabel"), href: siteConfig.github, external: true },
-  ];
 
   return (
     <Section id="contact" heading={t("heading")}>
@@ -27,22 +22,19 @@ export function Contact() {
           </p>
         </Reveal>
         <Reveal delay={0.1}>
-          <div className="mt-8 flex flex-wrap gap-4">
-            {links.map((l, i) => (
-              <a
-                key={l.label}
-                href={l.href}
-                target={l.external ? "_blank" : undefined}
-                rel={l.external ? "noopener noreferrer" : undefined}
-                className={`rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5 ${
-                  i === 0
-                    ? "bg-accent text-white shadow-lg shadow-accent/30"
-                    : "border border-border text-fg hover:border-accent hover:text-accent"
-                }`}
-              >
-                {l.label}
-              </a>
-            ))}
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition-transform hover:-translate-y-0.5"
+            >
+              {t("emailLabel")}
+            </a>
+            <Link
+              href="/contact"
+              className="rounded-full border border-border px-6 py-3 text-sm font-semibold text-fg transition-colors hover:border-accent hover:text-accent"
+            >
+              {t("allOptions")} →
+            </Link>
           </div>
         </Reveal>
       </div>

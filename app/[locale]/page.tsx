@@ -1,10 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { Hero } from "./sections/Hero";
-import { About } from "./sections/About";
-import { Experience } from "./sections/Experience";
-import { Projects } from "./sections/Projects";
-import { Interests } from "./sections/Interests";
+import { AboutLead } from "./sections/AboutLead";
+import { Teasers } from "./sections/Teasers";
 import { Contact } from "./sections/Contact";
 
 export default async function Home({
@@ -18,10 +16,8 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Interests />
+      <AboutLead />
+      <Teasers />
       <Contact />
     </>
   );

@@ -3,12 +3,19 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
+import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageToggle } from "./LanguageToggle";
 
-const SECTIONS = ["about", "experience", "projects", "interests", "contact"] as const;
+const ITEMS = [
+  { key: "experience", href: "/experience" },
+  { key: "hackathons", href: "/hackathons" },
+  { key: "interests", href: "/interests" },
+  { key: "contact", href: "/contact" },
+] as const;
 
 export function Nav() {
   const t = useTranslations("Nav");
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -18,6 +25,8 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const isActive = (href: string) => pathname === href;
 
   return (
     <motion.header
@@ -29,19 +38,24 @@ export function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
-        <a href="#top" className="font-display text-base font-extrabold tracking-tight">
+        <Link href="/" className="font-display text-base font-extrabold tracking-tight">
           AK<span className="text-accent">.</span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-7 md:flex">
-          {SECTIONS.map((s) => (
-            <a
-              key={s}
-              href={`#${s}`}
-              className="text-sm font-medium text-muted transition-colors hover:text-fg"
+          {ITEMS.map((item) => (
+            <Link
+              key={item.key}
+              href={item.href}
+              className={`relative text-sm font-medium transition-colors hover:text-fg ${
+                isActive(item.href) ? "text-fg" : "text-muted"
+              }`}
             >
-              {t(s)}
-            </a>
+              {t(item.key)}
+              {isActive(item.href) && (
+                <span className="absolute -bottom-1.5 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-accent" />
+              )}
+            </Link>
           ))}
         </div>
 
@@ -78,15 +92,17 @@ export function Nav() {
       {open && (
         <div className="glass border-t border-border md:hidden">
           <div className="mx-auto flex max-w-6xl flex-col px-5 py-2">
-            {SECTIONS.map((s) => (
-              <a
-                key={s}
-                href={`#${s}`}
+            {ITEMS.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
                 onClick={() => setOpen(false)}
-                className="border-b border-border/60 py-3 text-sm font-medium text-muted last:border-0 hover:text-fg"
+                className={`border-b border-border/60 py-3 text-sm font-medium last:border-0 hover:text-fg ${
+                  isActive(item.href) ? "text-fg" : "text-muted"
+                }`}
               >
-                {t(s)}
-              </a>
+                {t(item.key)}
+              </Link>
             ))}
           </div>
         </div>
