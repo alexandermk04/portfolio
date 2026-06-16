@@ -14,7 +14,11 @@ export function Contact() {
       <div className="relative overflow-hidden rounded-3xl border border-border bg-surface/40 p-8 sm:p-12">
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/20 blur-[100px]"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(26rem 26rem at top right, color-mix(in oklab, var(--color-accent) 22%, transparent), transparent 60%)",
+          }}
         />
         <Reveal>
           <p className="max-w-2xl text-xl leading-relaxed text-fg sm:text-2xl">

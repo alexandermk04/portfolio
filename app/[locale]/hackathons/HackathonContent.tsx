@@ -29,9 +29,6 @@ export function HackathonContent() {
   return (
     <div className="px-5 pb-20 pt-6 sm:pb-28">
       <div className="mx-auto max-w-6xl">
-        <Reveal>
-          <p className="font-mono text-xs text-muted">{t("placeholderNote")}</p>
-        </Reveal>
 
         {/* Ticket-style hackathon cards */}
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
@@ -82,10 +79,24 @@ export function HackathonContent() {
             <LocationMap
               className="mx-auto mt-8 max-w-2xl"
               ariaLabel={t("map.ariaLabel")}
-              markers={items.map((item) => ({
-                id: item.city,
-                label: item.venue,
-                sublabel: item.year,
+              markers={Object.values(
+                items.reduce<
+                  Record<string, { id: string; label: string; years: string[] }>
+                >((acc, item) => {
+                  const entry = (acc[item.city] ??= {
+                    id: item.city,
+                    label: item.venue,
+                    years: [],
+                  });
+                  entry.years.push(item.year);
+                  return acc;
+                }, {}),
+              ).map((entry) => ({
+                id: entry.id,
+                label: entry.label,
+                sublabel: entry.years
+                  .sort((a, b) => Number(b) - Number(a))
+                  .join(" · "),
               }))}
             />
           </Reveal>

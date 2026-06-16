@@ -124,39 +124,46 @@
     },
     "heading": "Hackathons",
     "subheading": "Von der Idee zum funktionierenden Prototyp in 24–48 Stunden.",
-    "placeholderNote": "// Platzhalter-Einträge – echte Hackathons folgen bald",
     "items": [
       {
-        "name": "Hack Hamburg",
+        "name": "Cheftreff AI Hackathon",
         "city": "hamburg",
         "venue": "Hamburg",
-        "year": "2025",
-        "summary": "Echtzeit-Verspätungsprognose für den Nahverkehr gebaut.",
+        "year": "2026",
+        "summary": "BCG Platinion Case",
         "tech": ["Python", "FastAPI", "React"]
-      },
-      {
-        "name": "HackaTUM",
-        "city": "munich",
-        "venue": "München",
-        "year": "2024",
-        "summary": "In 36 Stunden ein smartes Energie-Dashboard prototypisiert.",
-        "tech": ["TypeScript", "Next.js", "PostgreSQL"]
       },
       {
         "name": "START Hack",
         "city": "stgallen",
         "venue": "St. Gallen",
-        "year": "2024",
-        "summary": "Nachhaltigkeits-Case mit einem CO₂-Tracker für Lieferketten angegangen.",
+        "year": "2026",
+        "summary": "Placeholder Text",
         "tech": ["Python", "Streamlit", "scikit-learn"]
       },
       {
-        "name": "Bits & Bäume Hack",
-        "city": "berlin",
-        "venue": "Berlin",
-        "year": "2023",
-        "summary": "Mit offenen Daten an grüneren Städten gehackt.",
-        "tech": ["Python", "Pandas", "Leaflet"]
+        "name": "Cheftreff AI Hackathon",
+        "city": "hamburg",
+        "venue": "Hamburg",
+        "year": "2025",
+        "summary": "Netlight x World Food Programme Case",
+        "tech": ["Python", "Pandas"]
+      },
+      {
+        "name": "START Hack",
+        "city": "stgallen",
+        "venue": "St. Gallen",
+        "year": "2025",
+        "summary": "Syngenta Case",
+        "tech": ["Python", "Streamlit", "scikit-learn"]
+      },
+      {
+        "name": "Cheftreff AI Hackathon",
+        "city": "hamburg",
+        "venue": "Hamburg",
+        "year": "2024",
+        "summary": "Otto Dörner Demand Forecasting",
+        "tech": ["Python", "Pandas"]
       }
     ],
     "map": {
@@ -215,11 +222,10 @@
     },
     "marathons": {
       "heading": "Marathons",
-      "note": "// Platzhalter-Städte & -Jahre",
       "ariaLabel": "Europakarte mit Marathon-Orten",
       "items": [
-        { "city": "hamburg", "label": "Haspa Marathon Hamburg", "year": "2024" },
-        { "city": "berlin", "label": "Berlin-Marathon", "year": "2025" }
+        { "city": "hamburg", "label": "Haspa Marathon Hamburg", "year": "2026" },
+        { "city": "malaga", "label": "Generali Marathon Malaga", "year": "2025" }
       ]
     }
   },

@@ -59,6 +59,7 @@ export function LocationMap({ markers, ariaLabel, className }: LocationMapProps)
                   cy={y}
                   r={7}
                   fill="var(--color-accent)"
+                  initial={{ r: 7, opacity: 0.4 }}
                   animate={{ r: [7, 18], opacity: [0.4, 0] }}
                   transition={{
                     duration: 2,

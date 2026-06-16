@@ -93,7 +93,6 @@ export function InterestsContent() {
             <h2 className="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">
               {t("marathons.heading")}
             </h2>
-            <p className="mt-2 font-mono text-xs text-muted">{t("marathons.note")}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <LocationMap

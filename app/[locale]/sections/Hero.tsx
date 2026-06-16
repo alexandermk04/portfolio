@@ -68,7 +68,7 @@ export function Hero() {
           className="mt-6 flex h-9 items-center text-xl font-semibold text-fg sm:text-2xl"
         >
           <span className="mr-2 text-muted">›</span>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             <motion.span
               key={index}
               initial={{ opacity: 0, y: reduce ? 0 : 12 }}

@@ -124,39 +124,46 @@
     },
     "heading": "Hackathons",
     "subheading": "From idea to working prototype in 24–48 hours.",
-    "placeholderNote": "// placeholder entries – real hackathons coming soon",
     "items": [
       {
-        "name": "Hack Hamburg",
+        "name": "Cheftreff AI Hackathon",
         "city": "hamburg",
         "venue": "Hamburg",
-        "year": "2025",
-        "summary": "Built a real-time delay predictor for local transit.",
+        "year": "2026",
+        "summary": "BCG Platinion Case",
         "tech": ["Python", "FastAPI", "React"]
-      },
-      {
-        "name": "HackaTUM",
-        "city": "munich",
-        "venue": "Munich",
-        "year": "2024",
-        "summary": "Prototyped a smart energy dashboard in 36 hours.",
-        "tech": ["TypeScript", "Next.js", "PostgreSQL"]
       },
       {
         "name": "START Hack",
         "city": "stgallen",
         "venue": "St. Gallen",
-        "year": "2024",
-        "summary": "Tackled a sustainability case with a supply-chain CO₂ tracker.",
+        "year": "2026",
+        "summary": "Placeholder Text",
         "tech": ["Python", "Streamlit", "scikit-learn"]
       },
       {
-        "name": "Bits & Bäume Hack",
-        "city": "berlin",
-        "venue": "Berlin",
-        "year": "2023",
-        "summary": "Hacked on open data for greener cities.",
-        "tech": ["Python", "Pandas", "Leaflet"]
+        "name": "Cheftreff AI Hackathon",
+        "city": "hamburg",
+        "venue": "Hamburg",
+        "year": "2025",
+        "summary": "Netlight x World Food Programme Case",
+        "tech": ["Python", "Pandas"]
+      },
+      {
+        "name": "START Hack",
+        "city": "stgallen",
+        "venue": "St. Gallen",
+        "year": "2025",
+        "summary": "Syngenta Case",
+        "tech": ["Python", "Streamlit", "scikit-learn"]
+      },
+      {
+        "name": "Cheftreff AI Hackathon",
+        "city": "hamburg",
+        "venue": "Hamburg",
+        "year": "2024",
+        "summary": "Otto Dörner Demand Forecasting",
+        "tech": ["Python", "Pandas"]
       }
     ],
     "map": {
@@ -188,7 +195,7 @@
     "subheading": "What drives me beyond my studies.",
     "stats": [
       { "value": "2", "label": "marathons run" },
-      { "value": "42.195 km", "label": "per marathon" },
+      { "value": "3", "label": "languages mastered" },
       { "value": "∞", "label": "curiosity" }
     ],
     "items": [
@@ -215,11 +222,10 @@
     },
     "marathons": {
       "heading": "Marathons",
-      "note": "// placeholder cities & years",
       "ariaLabel": "Map of Europe showing marathon locations",
       "items": [
-        { "city": "hamburg", "label": "Haspa Marathon Hamburg", "year": "2024" },
-        { "city": "berlin", "label": "Berlin Marathon", "year": "2025" }
+        { "city": "hamburg", "label": "Haspa Marathon Hamburg", "year": "2026" },
+        { "city": "malaga", "label": "Generali Marathon Malaga", "year": "2025" }
       ]
     }
   },

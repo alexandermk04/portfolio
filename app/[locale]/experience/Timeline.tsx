@@ -44,7 +44,7 @@ function Knot({ current, side }: { current?: boolean; side: "left" | "right" }) 
         }`}
       />
       <span
-        className={`absolute top-7 flex h-3.5 w-3.5 ${
+        className={`absolute top-7 z-10 flex h-3.5 w-3.5 ${
           side === "right" ? "-right-[31px]" : "-left-[31px]"
         }`}
       >
@@ -52,6 +52,7 @@ function Knot({ current, side }: { current?: boolean; side: "left" | "right" }) 
           <motion.span
             aria-hidden
             className="absolute inset-0 rounded-full bg-accent"
+            initial={{ scale: 1, opacity: 0.4 }}
             animate={{ scale: [1, 2], opacity: [0.4, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
           />
@@ -71,6 +72,7 @@ function MobileKnot({ current }: { current?: boolean }) {
         <motion.span
           aria-hidden
           className="absolute inset-0 rounded-full bg-accent"
+          initial={{ scale: 1, opacity: 0.4 }}
           animate={{ scale: [1, 2], opacity: [0.4, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
         />
