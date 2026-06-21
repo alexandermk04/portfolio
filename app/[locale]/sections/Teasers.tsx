@@ -48,7 +48,7 @@ function Motif({ page }: { page: Page }) {
   if (page === "hackathons") {
     return (
       <div aria-hidden className="font-mono text-xs font-semibold uppercase tracking-widest text-accent">
-        {"{ 24–48h }"}
+        {"{ 24-48h }"}
       </div>
     );
   }

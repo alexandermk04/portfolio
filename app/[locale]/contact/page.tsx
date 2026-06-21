@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: Props) {
   setRequestLocale(locale as Locale);
   const t = await getTranslations("ContactPage");
   const options = t.raw("options") as ContactOption[];
-  const hasPortrait = existsSync(join(process.cwd(), "public", "portrait.jpg"));
+  const hasPortrait = existsSync(join(process.cwd(), "public", "portrait.jpeg"));
 
   return (
     <>
@@ -43,7 +43,7 @@ export default async function ContactPage({ params }: Props) {
           <Reveal>
             {hasPortrait ? (
               <Image
-                src="/portrait.jpg"
+                src="/portrait.jpeg"
                 alt={t("photoAlt")}
                 width={640}
                 height={800}
@@ -54,9 +54,6 @@ export default async function ContactPage({ params }: Props) {
               <div className="flex aspect-[4/5] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-3xl border border-border bg-bg-soft">
                 <span className="font-display text-6xl font-extrabold text-accent">
                   AK<span className="text-fg">.</span>
-                </span>
-                <span className="px-6 text-center font-mono text-xs text-muted">
-                  {t("photoNote")}
                 </span>
               </div>
             )}

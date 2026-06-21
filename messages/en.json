@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "title": "Alexander Kranz – Data Science Student & Working Student in Hamburg",
+    "title": "Alexander Kranz - Data Science Student & Working Student in Hamburg",
     "description": "Personal website of Alexander Kranz: Data Science student in Hamburg, working student at Deutsche Bahn, scholarship holder of the Studienstiftung, marathon runner and hackathon enthusiast.",
-    "ogAlt": "Alexander Kranz – Data Science student in Hamburg"
+    "ogAlt": "Alexander Kranz - Data Science student in Hamburg"
   },
   "Nav": {
     "home": "Home",
@@ -21,14 +21,14 @@
       "Marathon Runner",
       "Hackathon Enthusiast"
     ],
-    "tagline": "Alexander Kranz, in full – I study Data Science in Hamburg, connecting data, technology and curiosity: at work, in code and out on the running track.",
+    "tagline": "Alexander Kranz, in full - I study Data Science in Hamburg, connecting data, technology and curiosity: at work, in code and out on the running track.",
     "ctaContact": "Get in touch",
     "ctaLinkedin": "LinkedIn",
     "scroll": "Learn more"
   },
   "Home": {
-    "aboutLead": "I'm passionate about data – and just as much about the people and stories behind it.",
-    "aboutText": "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions – and how technology can improve people's everyday lives.",
+    "aboutLead": "I'm passionate about data - and just as much about the people and stories behind it.",
+    "aboutText": "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions - and how technology can improve people's everyday lives.",
     "facts": [
       { "label": "Based in", "value": "Hamburg" },
       { "label": "Studies", "value": "B.Sc. Data Science" },
@@ -39,17 +39,17 @@
       "heading": "Explore",
       "experience": {
         "title": "Experience",
-        "description": "My path so far – work and education as two parallel timelines, from Ahrensburg to Hamburg, via Ecuador.",
+        "description": "My path so far - work and education as two parallel timelines, from Ahrensburg to Hamburg, via Ecuador.",
         "cta": "View timeline"
       },
       "projects": {
         "title": "Projects",
-        "description": "Open-source code, my AI student club Campus-AI Hamburg and academic detours – a look at what I build.",
+        "description": "Open-source code, my AI student club Campus-AI Hamburg and academic detours - a look at what I build.",
         "cta": "Browse projects"
       },
       "hackathons": {
         "title": "Hackathons",
-        "description": "Quick prototypes, great teams, little sleep – the hackathons I've joined and where they took me.",
+        "description": "Quick prototypes, great teams, little sleep - the hackathons I've joined and where they took me.",
         "cta": "See the hacks"
       },
       "interests": {
@@ -61,7 +61,7 @@
   },
   "ExperiencePage": {
     "meta": {
-      "title": "Experience – Alexander Kranz",
+      "title": "Experience - Alexander Kranz",
       "description": "The path of Alexander Kranz: working student at Deutsche Bahn and Otto, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
     },
     "heading": "Experience",
@@ -139,11 +139,11 @@
   },
   "HackathonsPage": {
     "meta": {
-      "title": "Hackathons – Alexander Kranz",
-      "description": "Hackathons Alexander Kranz has participated in – technologies, projects and locations across Europe."
+      "title": "Hackathons - Alexander Kranz",
+      "description": "Hackathons Alexander Kranz has participated in - technologies, projects and locations across Europe."
     },
     "heading": "Hackathons",
-    "subheading": "From idea to working prototype in 24–48 hours.",
+    "subheading": "From idea to working prototype in 24-48 hours.",
     "items": [
       {
         "name": "Cheftreff AI Hackathon",
@@ -229,11 +229,11 @@
   },
   "ProjectsPage": {
     "meta": {
-      "title": "Projects – Alexander Kranz",
+      "title": "Projects - Alexander Kranz",
       "description": "Projects by Alexander Kranz: public repositories on GitHub, the Campus-AI Hamburg student club, and academic stays and summer schools."
     },
     "heading": "Projects",
-    "subheading": "Public repositories, my AI student club and academic detours – the things I build and the places that keep me learning.",
+    "subheading": "Public repositories, my AI student club and academic detours - the things I build and the places that keep me learning.",
     "filters": {
       "all": "Everything",
       "club": "Community",
@@ -241,7 +241,7 @@
       "academic": "Academic"
     },
     "featuredLabel": "Currently",
-    "emptyState": "Nothing here yet – more soon.",
+    "emptyState": "Nothing here yet - more soon.",
     "projects": [
       {
         "id": "campus-ai",
@@ -251,7 +251,7 @@
         "org": "Student club · Co-organiser",
         "year": "since 2025",
         "description": "A student-led club connecting people across Hamburg's universities who are curious about artificial intelligence. We run hands-on workshops, build projects together and host talks that turn AI hype into real understanding.",
-        "image": "/projects/cai_banner.png",
+        "image": "/projects/cai_banner.jpeg",
         "tags": ["Community", "Workshops", "AI"],
         "link": { "label": "Visit the club", "url": "https://campus-ai-hamburg.de" }
       },
@@ -289,7 +289,7 @@
   },
   "InterestsPage": {
     "meta": {
-      "title": "Interests – Alexander Kranz",
+      "title": "Interests - Alexander Kranz",
       "description": "What drives Alexander Kranz beyond data science: marathon running, languages, hackathons and an endless curiosity."
     },
     "heading": "More than data",
@@ -352,19 +352,18 @@
   },
   "Contact": {
     "heading": "Let's talk",
-    "text": "Whether it's an exciting project, a working-student role or simply a good conversation – I'd love to hear from you.",
+    "text": "Whether it's an exciting project, a working-student role or simply a good conversation - I'd love to hear from you.",
     "emailLabel": "Send an email",
     "allOptions": "All contact options"
   },
   "ContactPage": {
     "meta": {
-      "title": "Contact – Alexander Kranz",
-      "description": "Get in touch with Alexander Kranz – via email, LinkedIn or GitHub."
+      "title": "Contact - Alexander Kranz",
+      "description": "Get in touch with Alexander Kranz - via email, LinkedIn or GitHub."
     },
     "heading": "Let's talk",
-    "intro": "Whether it's an exciting project, a working-student role or simply a good conversation – I'd love to hear from you. The fastest way is an email; I usually reply within a day or two.",
+    "intro": "Whether it's an exciting project, a working-student role or simply a good conversation - I'd love to hear from you. The fastest way is an email; I usually reply within a day or two.",
     "photoAlt": "Portrait of Alexander Kranz",
-    "photoNote": "// add public/portrait.jpg to replace this placeholder",
     "optionsHeading": "Where to reach me",
     "options": [
       { "id": "email", "label": "Send an email", "hint": "The fastest way to reach me" },
@@ -374,7 +373,7 @@
   },
   "ImprintPage": {
     "meta": {
-      "title": "Imprint – Alexander Kranz",
+      "title": "Imprint - Alexander Kranz",
       "description": "Legal notice for alexanderkranz.de in accordance with § 5 DDG."
     },
     "heading": "Imprint",

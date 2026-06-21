@@ -6,7 +6,7 @@ export function PersonJsonLd({ locale }: { locale: string }) {
     "@type": "Person",
     name: "Alexander Kranz",
     url: siteConfig.url,
-    image: `${siteConfig.url}/opengraph-image`,
+    image: `${siteConfig.url}/portrait.jpeg`,
     jobTitle: locale === "de" ? "Data-Science-Student" : "Data Science Student",
     description:
       locale === "de"
@@ -22,7 +22,7 @@ export function PersonJsonLd({ locale }: { locale: string }) {
     worksFor: { "@type": "Organization", name: "DB E&C" },
     alumniOf: [
       { "@type": "Organization", name: "Otto" },
-      { "@type": "CollegeOrUniversity", name: "TUHH" },
+      { "@type": "CollegeOrUniversity", name: "UPV" },
     ],
     award: "Studienstiftung des Deutschen Volkes",
     knowsLanguage: ["German", "English", "Spanish"],

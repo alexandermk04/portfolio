@@ -25,7 +25,7 @@ homepage plus dedicated subpages, each with its own layout and design.
 | `/experience` | Dual-thread vertical timeline: both rails centered, work cards left / education right, knot spacing proportional to elapsed time (`start` fields), mobile merged with badges |
 | `/hackathons` | Ticket-style cards, paginated 4 at a time (minimalistic arrow controls) + Europe map of all locations |
 | `/interests` | Stats strip, alternating image/text feature rows (mountaineering w/ Ecuador peak list, scuba diving, marathons w/ embedded mini map), language cards. Photos use the `availableImages` existence-check placeholder pattern |
-| `/contact` | Portrait (placeholder until `public/portrait.jpg` exists), intro, all contact options |
+| `/contact` | Portrait (placeholder until `public/portrait.jpeg` exists), intro, all contact options |
 | `/imprint` | German legal notice (Impressum, § 5 DDG). `noindex`. Address comes from `siteConfig.imprint`; linked from the footer |
 
 The homepage `#contact` section is the short version; the full version is `/contact`.
@@ -66,5 +66,5 @@ metadata via `buildPageMetadata` in `lib/metadata.ts`) + a client content compon
 - Marathon cities/years in `InterestsPage.marathons`
 - Exact start months (`start` fields) in `ExperiencePage.items` (years correct, months estimated)
 - LinkedIn/GitHub URLs in `config/site.ts`
-- Portrait photo at `public/portrait.jpg` (contact page shows a placeholder until then)
+- Portrait photo at `public/portrait.jpeg` (contact page shows a placeholder until then)
 - **Legal:** real postal address in `siteConfig.imprint` — the `/imprint` page is required by German law and currently shows a placeholder address

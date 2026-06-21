@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "title": "Alexander Kranz – Data Science Student & Werkstudent in Hamburg",
+    "title": "Alexander Kranz - Data Science Student & Werkstudent in Hamburg",
     "description": "Persönliche Website von Alexander Kranz: Data-Science-Student in Hamburg, Werkstudent bei der Deutschen Bahn, Stipendiat der Studienstiftung, Marathonläufer und Hackathon-Enthusiast.",
-    "ogAlt": "Alexander Kranz – Data Science Student in Hamburg"
+    "ogAlt": "Alexander Kranz - Data Science Student in Hamburg"
   },
   "Nav": {
     "home": "Start",
@@ -21,14 +21,14 @@
       "Marathonläufer",
       "Hackathon-Enthusiast"
     ],
-    "tagline": "Alexander Kranz, ganz offiziell – ich studiere Data Science in Hamburg und verbinde Daten, Technologie und Neugier: auf der Arbeit, im Code und auf der Laufstrecke.",
+    "tagline": "Alexander Kranz, ganz offiziell - ich studiere Data Science in Hamburg und verbinde Daten, Technologie und Neugier: auf der Arbeit, im Code und auf der Laufstrecke.",
     "ctaContact": "Kontakt aufnehmen",
     "ctaLinkedin": "LinkedIn",
     "scroll": "Mehr erfahren"
   },
   "Home": {
-    "aboutLead": "Daten begeistern mich – genauso wie die Menschen und Geschichten dahinter.",
-    "aboutText": "Aufgewachsen in Ahrensburg, studiere ich heute Data Science im Bachelor in Hamburg. Mich fasziniert, wie aus Daten echte Entscheidungen werden – und wie Technologie den Alltag von Menschen verbessern kann.",
+    "aboutLead": "Daten begeistern mich - genauso wie die Menschen und Geschichten dahinter.",
+    "aboutText": "Aufgewachsen in Ahrensburg, studiere ich heute Data Science im Bachelor in Hamburg. Mich fasziniert, wie aus Daten echte Entscheidungen werden - und wie Technologie den Alltag von Menschen verbessern kann.",
     "facts": [
       { "label": "Wohnort", "value": "Hamburg" },
       { "label": "Studium", "value": "B.Sc. Data Science" },
@@ -39,17 +39,17 @@
       "heading": "Entdecken",
       "experience": {
         "title": "Werdegang",
-        "description": "Mein Weg bisher – Arbeit und Bildung als zwei parallele Zeitstränge, von Ahrensburg nach Hamburg, mit Umweg über Ecuador.",
+        "description": "Mein Weg bisher - Arbeit und Bildung als zwei parallele Zeitstränge, von Ahrensburg nach Hamburg, mit Umweg über Ecuador.",
         "cta": "Zeitstrahl ansehen"
       },
       "projects": {
         "title": "Projekte",
-        "description": "Open-Source-Code, mein KI-Studierendenclub Campus-AI Hamburg und akademische Abstecher – ein Blick auf das, was ich baue.",
+        "description": "Open-Source-Code, mein KI-Studierendenclub Campus-AI Hamburg und akademische Abstecher - ein Blick auf das, was ich baue.",
         "cta": "Projekte ansehen"
       },
       "hackathons": {
         "title": "Hackathons",
-        "description": "Schnelle Prototypen, großartige Teams, wenig Schlaf – die Hackathons, an denen ich teilgenommen habe, und wohin sie mich geführt haben.",
+        "description": "Schnelle Prototypen, großartige Teams, wenig Schlaf - die Hackathons, an denen ich teilgenommen habe, und wohin sie mich geführt haben.",
         "cta": "Zu den Hacks"
       },
       "interests": {
@@ -61,11 +61,11 @@
   },
   "ExperiencePage": {
     "meta": {
-      "title": "Werdegang – Alexander Kranz",
+      "title": "Werdegang - Alexander Kranz",
       "description": "Der Weg von Alexander Kranz: Werkstudent bei der Deutschen Bahn und Otto, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und ein Freiwilliges Jahr in Ecuador."
     },
     "heading": "Werdegang",
-    "intro": "Von einem Freiwilligen Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn – das sind die Stationen, die mich geprägt haben.",
+    "intro": "Von einem Freiwilligen Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn - das sind die Stationen, die mich geprägt haben.",
     "currentHeading": "Aktuell",
     "threads": {
       "work": "Arbeit",
@@ -85,7 +85,7 @@
       },
       {
         "thread": "work",
-        "date": "2025 – 2025",
+        "date": "2025 - 2025",
         "start": "2024-01",
         "title": "Werkstudent",
         "org": "Otto Group one.O",
@@ -106,7 +106,7 @@
       },
       {
         "thread": "education",
-        "date": "2025 – Anfang 2026",
+        "date": "2025 - Anfang 2026",
         "start": "2025-09",
         "title": "Erasmus-Austausch",
         "org": "UPV",
@@ -127,7 +127,7 @@
       },
       {
         "thread": "education",
-        "date": "2022 – 2023",
+        "date": "2022 - 2023",
         "start": "2022-08",
         "title": "Englischlehrer",
         "org": "Freiwilliges Jahr in Ecuador",
@@ -139,11 +139,11 @@
   },
   "HackathonsPage": {
     "meta": {
-      "title": "Hackathons – Alexander Kranz",
-      "description": "Hackathons, an denen Alexander Kranz teilgenommen hat – Technologien, Projekte und Orte in ganz Europa."
+      "title": "Hackathons - Alexander Kranz",
+      "description": "Hackathons, an denen Alexander Kranz teilgenommen hat - Technologien, Projekte und Orte in ganz Europa."
     },
     "heading": "Hackathons",
-    "subheading": "Von der Idee zum funktionierenden Prototyp in 24–48 Stunden.",
+    "subheading": "Von der Idee zum funktionierenden Prototyp in 24-48 Stunden.",
     "items": [
       {
         "name": "Cheftreff AI Hackathon",
@@ -229,11 +229,11 @@
   },
   "ProjectsPage": {
     "meta": {
-      "title": "Projekte – Alexander Kranz",
+      "title": "Projekte - Alexander Kranz",
       "description": "Projekte von Alexander Kranz: Öffentliche Repositories auf GitHub, der Studierendenclub Campus-AI Hamburg sowie Forschungsaufenthalte und Summer Schools."
     },
     "heading": "Projekte",
-    "subheading": "Öffentliche Repositories, mein KI-Studierendenclub und akademische Abstecher – das, was ich baue, und die Orte, an denen ich weiterlerne.",
+    "subheading": "Öffentliche Repositories, mein KI-Studierendenclub und akademische Abstecher - das, was ich baue, und die Orte, an denen ich weiterlerne.",
     "filters": {
       "all": "Alles",
       "club": "Community",
@@ -241,7 +241,7 @@
       "academic": "Akademisch"
     },
     "featuredLabel": "Aktuell",
-    "emptyState": "Hier ist noch nichts – bald mehr.",
+    "emptyState": "Hier ist noch nichts - bald mehr.",
     "projects": [
       {
         "id": "campus-ai",
@@ -251,7 +251,7 @@
         "org": "Studierendenclub · Mitorganisator",
         "year": "seit 2025",
         "description": "Ein studentisch geführter Club, der Menschen aus Hamburgs Hochschulen zusammenbringt, die sich für künstliche Intelligenz begeistern. Wir veranstalten praxisnahe Workshops, bauen gemeinsam Projekte und laden zu Talks ein, die aus KI-Hype echtes Verständnis machen.",
-        "image": "/projects/cai_banner.png",
+        "image": "/projects/cai_banner.jpeg",
         "tags": ["Community", "Workshops", "KI"],
         "link": { "label": "Zum Club", "url": "https://campus-ai-hamburg.de" }
       },
@@ -261,7 +261,7 @@
         "title": "Dieses Portfolio",
         "org": "Persönliches Projekt",
         "year": "2026",
-        "description": "Die Seite, auf der du gerade bist – ein zweisprachiges, mehrseitiges Portfolio, gebaut mit Next.js, React und Tailwind CSS. Open Source, also schau gern hinter die Kulissen.",
+        "description": "Die Seite, auf der du gerade bist - ein zweisprachiges, mehrseitiges Portfolio, gebaut mit Next.js, React und Tailwind CSS. Open Source, also schau gern hinter die Kulissen.",
         "tags": ["Next.js", "TypeScript", "Tailwind"],
         "link": { "label": "Auf GitHub ansehen", "url": "https://github.com/alexanderkranz/portfolio" }
       },
@@ -280,7 +280,7 @@
         "id": "reprodicubility",
         "category": "academic",
         "title": "reprodICUbility",
-        "org": "Charité – Universitätsmedizin Berlin",
+        "org": "Charité - Universitätsmedizin Berlin",
         "year": "2024",
         "description": "Projektarbeit zur Reproduzierbarkeit von Studien auf Basis von Intensivstations-Datensätzen.",
         "tags": ["Machine Learning", "Forschung"]
@@ -289,7 +289,7 @@
   },
   "InterestsPage": {
     "meta": {
-      "title": "Interessen – Alexander Kranz",
+      "title": "Interessen - Alexander Kranz",
       "description": "Was Alexander Kranz neben Data Science antreibt: Marathonlaufen, Sprachen, Hackathons und unendliche Neugier."
     },
     "heading": "Mehr als Daten",
@@ -352,19 +352,18 @@
   },
   "Contact": {
     "heading": "Lass uns sprechen",
-    "text": "Ob spannendes Projekt, Werkstudentenstelle oder einfach ein guter Austausch – ich freue mich, von dir zu hören.",
+    "text": "Ob spannendes Projekt, Werkstudentenstelle oder einfach ein guter Austausch - ich freue mich, von dir zu hören.",
     "emailLabel": "E-Mail schreiben",
     "allOptions": "Alle Kontaktmöglichkeiten"
   },
   "ContactPage": {
     "meta": {
-      "title": "Kontakt – Alexander Kranz",
-      "description": "Nimm Kontakt zu Alexander Kranz auf – per E-Mail, LinkedIn oder GitHub."
+      "title": "Kontakt - Alexander Kranz",
+      "description": "Nimm Kontakt zu Alexander Kranz auf - per E-Mail, LinkedIn oder GitHub."
     },
     "heading": "Lass uns sprechen",
-    "intro": "Ob spannendes Projekt, Werkstudentenstelle oder einfach ein guter Austausch – ich freue mich, von dir zu hören. Am schnellsten erreichst du mich per E-Mail; ich antworte meist innerhalb von ein bis zwei Tagen.",
+    "intro": "Ob spannendes Projekt, Werkstudentenstelle oder einfach ein guter Austausch - ich freue mich, von dir zu hören. Am schnellsten erreichst du mich per E-Mail; ich antworte meist innerhalb von ein bis zwei Tagen.",
     "photoAlt": "Porträt von Alexander Kranz",
-    "photoNote": "// public/portrait.jpg hinzufügen, um den Platzhalter zu ersetzen",
     "optionsHeading": "So erreichst du mich",
     "options": [
       { "id": "email", "label": "E-Mail schreiben", "hint": "Der schnellste Weg zu mir" },
@@ -374,7 +373,7 @@
   },
   "ImprintPage": {
     "meta": {
-      "title": "Impressum – Alexander Kranz",
+      "title": "Impressum - Alexander Kranz",
       "description": "Impressum für alexanderkranz.de gemäß § 5 DDG."
     },
     "heading": "Impressum",

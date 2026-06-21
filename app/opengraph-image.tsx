@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/config/site";
 
-export const alt = "Alexander Kranz – Data Science Student in Hamburg";
+export const alt = "Alexander Kranz - Data Science Student in Hamburg";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -16,8 +16,7 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background:
-            "radial-gradient(120% 120% at 100% 0%, #f6ead4 0%, #fbf7f0 55%)",
+          background: "#fbf7f0",
           color: "#2a2520",
           fontFamily: "sans-serif",
         }}
@@ -27,7 +26,7 @@ export default function OpenGraphImage() {
             fontSize: 26,
             letterSpacing: 6,
             textTransform: "uppercase",
-            color: "#6b8f5e",
+            color: "#1d7a80",
           }}
         >
           {siteConfig.url.replace(/^https?:\/\//, "")}
@@ -39,17 +38,24 @@ export default function OpenGraphImage() {
             fontWeight: 800,
             lineHeight: 1,
             marginTop: 24,
-            backgroundImage:
-              "linear-gradient(100deg, #e0a458 0%, #6b8f5e 100%)",
-            backgroundClip: "text",
-            color: "transparent",
+            fontFamily: "Georgia, 'Times New Roman', serif",
+            color: "#2a2520",
           }}
         >
-          Alexander Kranz
+          Alexander Kranz<span style={{ color: "#1d7a80" }}>.</span>
         </div>
         <div style={{ fontSize: 40, color: "#6e665b", marginTop: 28 }}>
           Data Science · Hamburg · Deutsche Bahn
         </div>
+        <div
+          style={{
+            width: 120,
+            height: 6,
+            marginTop: 44,
+            background: "#1d7a80",
+            borderRadius: 3,
+          }}
+        />
       </div>
     ),
     { ...size },
