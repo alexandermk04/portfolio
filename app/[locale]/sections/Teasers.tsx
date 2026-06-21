@@ -5,10 +5,30 @@ import { motion, useReducedMotion } from "motion/react";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/Reveal";
 
-const PAGES = ["experience", "hackathons", "interests"] as const;
+const PAGES = ["experience", "projects", "hackathons", "interests"] as const;
 type Page = (typeof PAGES)[number];
 
 function Motif({ page }: { page: Page }) {
+  if (page === "projects") {
+    // Mini git-branch graph, echoing the projects page.
+    return (
+      <svg
+        aria-hidden
+        viewBox="0 0 40 40"
+        className="h-10 w-10 text-accent"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      >
+        <line x1="10" y1="8" x2="10" y2="32" />
+        <circle cx="10" cy="8" r="3" className="fill-bg" />
+        <circle cx="10" cy="32" r="3" className="fill-bg" />
+        <path d="M10 16 q0 8 8 8 h4" />
+        <circle cx="28" cy="24" r="3" className="fill-bg" />
+      </svg>
+    );
+  }
   if (page === "experience") {
     // Mini timeline: a rail with three knots, echoing the experience page.
     return (
@@ -53,7 +73,7 @@ export function Teasers() {
             {t("teasers.heading")}
           </p>
         </Reveal>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {PAGES.map((page, i) => (
             <motion.div
               key={page}

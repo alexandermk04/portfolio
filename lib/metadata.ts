@@ -10,6 +10,7 @@ import { routing, type Locale } from "@/i18n/routing";
  */
 type PageNamespace =
   | "ExperiencePage"
+  | "ProjectsPage"
   | "HackathonsPage"
   | "InterestsPage"
   | "ContactPage";

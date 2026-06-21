@@ -16,6 +16,8 @@ type Item = {
   location: string;
   description: string;
   tags: string[];
+  /** Still ongoing today — pinned to the "Currently" band and pulses on the rail. */
+  current?: boolean;
 };
 
 /* Vertical scale: px per month between consecutive knots, clamped so cards
@@ -128,6 +130,56 @@ function Card({ item, badge }: { item: Item; badge?: string }) {
   );
 }
 
+/** Pinned summary of everything still ongoing, so the present is visible at the
+ *  top even when a role (e.g. the degree) started years ago and sits lower on
+ *  the chronological rail below. */
+function CurrentlyBand({ items, heading }: { items: Item[]; heading: string }) {
+  const reduce = useReducedMotion();
+  if (items.length === 0) return null;
+
+  return (
+    <div className="mb-14">
+      <Reveal>
+        <h2 className="flex items-center gap-2.5 text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+          <span className="relative flex h-2.5 w-2.5">
+            {!reduce && (
+              <motion.span
+                aria-hidden
+                className="absolute inset-0 rounded-full bg-accent"
+                initial={{ scale: 1, opacity: 0.4 }}
+                animate={{ scale: [1, 2.4], opacity: [0.4, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
+              />
+            )}
+            <span className="relative h-2.5 w-2.5 rounded-full bg-accent" />
+          </span>
+          {heading}
+        </h2>
+      </Reveal>
+      <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map((item, i) => (
+          <Reveal key={`${item.org}-${item.date}`} delay={0.06 * i}>
+            <div className="h-full rounded-2xl border border-accent/40 bg-accent/5 p-5">
+              <div className="flex items-baseline justify-between gap-3">
+                <h3 className="font-display text-lg font-bold leading-tight">
+                  {item.title}
+                </h3>
+                <span className="shrink-0 text-xs font-semibold uppercase tracking-wider text-muted">
+                  {item.date}
+                </span>
+              </div>
+              <p className="mt-1 text-sm font-medium text-accent">{item.org}</p>
+              <p className="mt-0.5 text-xs uppercase tracking-wider text-muted">
+                {item.location}
+              </p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Column({
   items,
   side,
@@ -155,7 +207,7 @@ function Column({
             className="relative"
             style={{ marginTop }}
           >
-            <Knot current={i === 0} side={side === "left" ? "right" : "left"} />
+            <Knot current={item.current} side={side === "left" ? "right" : "left"} />
             <Reveal delay={0.06 * i}>
               <Card item={item} />
             </Reveal>
@@ -172,10 +224,17 @@ export function Timeline() {
   const latestStart = monthsOf(items[0].start);
   const work = items.filter((item) => item.thread === "work");
   const education = items.filter((item) => item.thread === "education");
+  // Work first, then education — both newest-first within their thread.
+  const current = items
+    .filter((item) => item.current)
+    .sort((a, b) =>
+      a.thread === b.thread ? 0 : a.thread === "work" ? -1 : 1,
+    );
 
   return (
     <div className="px-5 pb-20 pt-10 sm:pb-28">
       <div className="mx-auto max-w-6xl">
+        <CurrentlyBand items={current} heading={t("currentHeading")} />
         {/* Mobile: one merged rail, thread shown as a badge per card */}
         <ol className="relative ml-3 border-l border-border md:hidden">
           {items.map((item, i) => (
@@ -183,7 +242,7 @@ export function Timeline() {
               key={`${item.org}-${item.date}`}
               className="relative pb-10 pl-8 last:pb-0"
             >
-              <MobileKnot current={i === 0} />
+              <MobileKnot current={item.current} />
               <Reveal delay={0.04 * i}>
                 <Card item={item} badge={t(`threads.${item.thread}`)} />
               </Reveal>

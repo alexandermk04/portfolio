@@ -9,6 +9,9 @@ export type MapMarker = {
   id: string;
   label: string;
   sublabel?: string;
+  /** Which side of the dot the label sits on. Defaults to "right". Use "left"
+   *  to keep close markers (e.g. Hamburg next to Berlin) from overlapping. */
+  labelDir?: "left" | "right";
 };
 
 type LocationMapProps = {
@@ -45,6 +48,9 @@ export function LocationMap({ markers, ariaLabel, className }: LocationMapProps)
           const coords = CITY_COORDS[marker.id];
           if (!coords) return null;
           const { x, y } = project(coords.lon, coords.lat);
+          const left = marker.labelDir === "left";
+          const labelX = left ? x - 14 : x + 14;
+          const anchor = left ? "end" : "start";
 
           return (
             <motion.g
@@ -78,8 +84,9 @@ export function LocationMap({ markers, ariaLabel, className }: LocationMapProps)
                 strokeWidth={2.5}
               />
               <text
-                x={x + 14}
+                x={labelX}
                 y={y + 2}
+                textAnchor={anchor}
                 fill="var(--color-fg)"
                 fontSize={20}
                 fontWeight={600}
@@ -89,8 +96,9 @@ export function LocationMap({ markers, ariaLabel, className }: LocationMapProps)
               </text>
               {marker.sublabel && (
                 <text
-                  x={x + 14}
+                  x={labelX}
                   y={y + 22}
+                  textAnchor={anchor}
                   fill="var(--color-muted)"
                   fontSize={15}
                   fontFamily="var(--font-sans)"

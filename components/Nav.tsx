@@ -8,6 +8,7 @@ import { LanguageToggle } from "./LanguageToggle";
 
 const ITEMS = [
   { key: "experience", href: "/experience" },
+  { key: "projects", href: "/projects" },
   { key: "hackathons", href: "/hackathons" },
   { key: "interests", href: "/interests" },
   { key: "contact", href: "/contact" },

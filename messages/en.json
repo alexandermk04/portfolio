@@ -7,6 +7,7 @@
   "Nav": {
     "home": "Home",
     "experience": "Experience",
+    "projects": "Projects",
     "hackathons": "Hackathons",
     "interests": "Interests",
     "contact": "Contact"
@@ -41,6 +42,11 @@
         "description": "My path so far – work and education as two parallel timelines, from Ahrensburg to Hamburg, via Ecuador.",
         "cta": "View timeline"
       },
+      "projects": {
+        "title": "Projects",
+        "description": "Open-source code, my AI student club Campus-AI Hamburg and academic detours – a look at what I build.",
+        "cta": "Browse projects"
+      },
       "hackathons": {
         "title": "Hackathons",
         "description": "Quick prototypes, great teams, little sleep – the hackathons I've joined and where they took me.",
@@ -59,7 +65,8 @@
       "description": "The path of Alexander Kranz: working student at Deutsche Bahn and Otto, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
     },
     "heading": "Experience",
-    "intro": "From school competitions to a voluntary year in Ecuador to working-student roles at Otto and Deutsche Bahn – these are the stations that shaped me, on two parallel tracks.",
+    "intro": "From school competitions to a voluntary year in Ecuador to working-student roles at Otto and Deutsche Bahn - these are the stations that shaped me.",
+    "currentHeading": "Right now",
     "threads": {
       "work": "Work",
       "education": "Education & Growth"
@@ -67,53 +74,66 @@
     "items": [
       {
         "thread": "work",
-        "date": "2023 – present",
-        "start": "2023-07",
+        "current": true,
+        "date": "since 2026",
+        "start": "2026-03",
         "title": "Working Student",
-        "org": "Deutsche Bahn",
+        "org": "DB E&C",
         "location": "Hamburg",
-        "description": "Working on data-driven questions around mobility and infrastructure.",
-        "tags": ["Data Science", "Python", "Analytics"]
+        "description": "AI-based prototypes and UI's for different tools.",
+        "tags": ["BIM", "IFC", "React.js"]
       },
       {
         "thread": "work",
-        "date": "2022 – 2023",
-        "start": "2022-08",
+        "date": "2025 - 2025",
+        "start": "2024-01",
         "title": "Working Student",
-        "org": "Otto",
+        "org": "Otto Group one.O",
         "location": "Hamburg",
-        "description": "Supporting the data-driven e-commerce environment of one of Europe's largest online retailers.",
-        "tags": ["E-Commerce", "Data", "SQL"]
+        "description": "Building the internal AI assistant for more than 10,000 active users.",
+        "tags": ["Chat Assistant", "RAG", "Agents"]
       },
       {
         "thread": "education",
-        "date": "since 2022",
-        "start": "2022-10",
-        "title": "B.Sc. Data Science",
-        "org": "University in Hamburg",
-        "location": "Hamburg",
-        "description": "Degree focused on statistics, machine learning and programming.",
-        "tags": ["Statistics", "Machine Learning", "Mathematics"]
-      },
-      {
-        "thread": "education",
-        "date": "since 2022",
-        "start": "2022-09",
+        "current": true,
+        "date": "since 2024",
+        "start": "2024-07",
         "title": "Scholarship Holder",
-        "org": "Studienstiftung des Deutschen Volkes",
+        "org": "Studienstiftung",
         "location": "Germany",
         "description": "Supported by Germany's largest and oldest organisation for the promotion of gifted students.",
         "tags": ["Scholarship", "Network"]
       },
       {
         "thread": "education",
-        "date": "2021 – 2022",
-        "start": "2021-08",
-        "title": "Volunteer / English Teacher",
+        "date": "2025 - early 2026",
+        "start": "2025-09",
+        "title": "Erasmus Exchange",
+        "org": "UPV",
+        "location": "Valencia",
+        "description": "Courses on machine learning & cybersecurity in Spanish.",
+        "tags": ["Cybersecurity", "Machine Learning", "Spanish"]
+      },
+      {
+        "thread": "education",
+        "current": true,
+        "date": "since 2023",
+        "start": "2023-10",
+        "title": "B.Sc. Data Science",
+        "org": "TUHH",
+        "location": "Hamburg",
+        "description": "Degree focused on statistics, machine learning and programming.",
+        "tags": ["Mathematics", "Statistics", "Machine Learning"]
+      },
+      {
+        "thread": "education",
+        "date": "2022 - 2023",
+        "start": "2022-08",
+        "title": "English Teacher",
         "org": "Voluntary year in Ecuador",
         "location": "Ecuador",
-        "description": "A year abroad: teaching English, intercultural experience and personal growth.",
-        "tags": ["Education", "Spanish", "Intercultural"]
+        "description": "A year abroad: teaching English, climbing mountains and experiencing a new culture.",
+        "tags": ["Education", "Spanish", "Cultural Exchange"]
       }
     ]
   },
@@ -140,6 +160,22 @@
         "year": "2026",
         "summary": "Placeholder Text",
         "tech": ["Python", "Streamlit", "scikit-learn"]
+      },
+      {
+        "name": "EY Parthenon Hackathon",
+        "city": "berlin",
+        "venue": "Berlin",
+        "year": "2025",
+        "summary": "AI-based document analysis for a consulting case",
+        "tech": ["Python", "Pandas"]
+      },
+      {
+        "name": "HackXplore",
+        "city": "karlsruhe",
+        "venue": "Karlsruhe",
+        "year": "2025",
+        "summary": "Würth Elektronik Case",
+        "tech": ["Python", "Pandas"]
       },
       {
         "name": "Cheftreff AI Hackathon",
@@ -170,21 +206,70 @@
       "heading": "Where I've hacked",
       "ariaLabel": "Map of Europe showing hackathon locations"
     },
-    "earlier": {
-      "heading": "Earlier competitions",
-      "items": [
-        {
-          "title": "Jugend forscht",
-          "description": "Independent research projects during school – scientific work, experimentation and presentation.",
-          "tags": ["Research", "STEM"]
-        },
-        {
-          "title": "Jugend debattiert",
-          "description": "A structured debating competition – argumentation, rhetoric and defending a point of view.",
-          "tags": ["Rhetoric", "Argumentation"]
-        }
-      ]
+    "placements": {
+      "1": "Winner",
+      "2": "2nd place",
+      "3": "3rd place"
     }
+  },
+  "ProjectsPage": {
+    "meta": {
+      "title": "Projects – Alexander Kranz",
+      "description": "Projects by Alexander Kranz: open-source work on GitHub, the Campus-AI Hamburg student club, and academic stays and summer schools."
+    },
+    "heading": "Projects",
+    "subheading": "Open-source code, my AI student club and a few academic detours – the things I build and the places that keep me learning.",
+    "filters": {
+      "all": "Everything",
+      "club": "Community",
+      "coding": "Coding",
+      "academic": "Academic"
+    },
+    "featuredLabel": "Currently",
+    "emptyState": "Nothing here yet – more soon.",
+    "projects": [
+      {
+        "id": "campus-ai",
+        "category": "club",
+        "featured": true,
+        "title": "Campus-AI Hamburg",
+        "org": "Student club · Co-organiser",
+        "year": "since 2025",
+        "description": "A student-led club connecting people across Hamburg's universities who are curious about artificial intelligence. We run hands-on workshops, build projects together and host talks that turn AI hype into real understanding.",
+        "image": "/projects/campus-ai.jpg",
+        "tags": ["Community", "Workshops", "AI"],
+        "link": { "label": "Visit the club", "url": "https://campus-ai-hamburg.de" }
+      },
+      {
+        "id": "portfolio",
+        "category": "coding",
+        "title": "This Portfolio",
+        "org": "Personal project",
+        "year": "2026",
+        "description": "The site you're on right now - a bilingual, multi-page portfolio built with Next.js, React and Tailwind CSS. Open source, so feel free to peek under the hood.",
+        "tags": ["Next.js", "TypeScript", "Tailwind"],
+        "link": { "label": "View on GitHub", "url": "https://github.com/alexanderkranz/portfolio" }
+      },
+      {
+        "id": "fls26",
+        "category": "coding",
+        "title": "FLS26",
+        "org": "Hackathon project",
+        "year": "2026",
+        "description": "Hackathon prototype for the BCG Platinion case at the Cheftreff AI Hackathon 2026.",
+        "tags": ["Next.js", "TypeScript", "Tailwind"],
+        "link": { "label": "View on GitHub", "url": "https://github.com/alexanderkranz/portfolio" }
+      },
+      {
+        "id": "reprodicubility",
+        "category": "academic",
+        "title": "reprodICUbility",
+        "org": "Charité - Universitätsmedizin Berlin",
+        "year": "2024",
+        "description": "Project work on reproducibility of studies regarding ICU datasets.",
+        "tags": ["Machine Learning", "Research"]
+      }
+    ]
   },
   "InterestsPage": {
     "meta": {

@@ -7,6 +7,7 @@
   "Nav": {
     "home": "Start",
     "experience": "Werdegang",
+    "projects": "Projekte",
     "hackathons": "Hackathons",
     "interests": "Interessen",
     "contact": "Kontakt"
@@ -41,6 +42,11 @@
         "description": "Mein Weg bisher – Arbeit und Bildung als zwei parallele Zeitstränge, von Ahrensburg nach Hamburg, mit Umweg über Ecuador.",
         "cta": "Zeitstrahl ansehen"
       },
+      "projects": {
+        "title": "Projekte",
+        "description": "Open-Source-Code, mein KI-Studierendenclub Campus-AI Hamburg und akademische Abstecher – ein Blick auf das, was ich baue.",
+        "cta": "Projekte ansehen"
+      },
       "hackathons": {
         "title": "Hackathons",
         "description": "Schnelle Prototypen, großartige Teams, wenig Schlaf – die Hackathons, an denen ich teilgenommen habe, und wohin sie mich geführt haben.",
@@ -59,7 +65,8 @@
       "description": "Der Weg von Alexander Kranz: Werkstudent bei der Deutschen Bahn und Otto, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und ein Freiwilliges Jahr in Ecuador."
     },
     "heading": "Werdegang",
-    "intro": "Von Schulwettbewerben über ein Freiwilliges Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn – das sind die Stationen, die mich geprägt haben, auf zwei parallelen Strängen.",
+    "intro": "Von Schulwettbewerben über ein Freiwilliges Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn – das sind die Stationen, die mich geprägt haben.",
+    "currentHeading": "Aktuell",
     "threads": {
       "work": "Arbeit",
       "education": "Bildung & Wachstum"
@@ -67,53 +74,66 @@
     "items": [
       {
         "thread": "work",
-        "date": "2023 – heute",
-        "start": "2023-07",
+        "current": true,
+        "date": "seit 2026",
+        "start": "2026-03",
         "title": "Werkstudent",
-        "org": "Deutsche Bahn",
+        "org": "DB E&C",
         "location": "Hamburg",
-        "description": "Arbeit an datengetriebenen Fragestellungen rund um Mobilität und Infrastruktur.",
-        "tags": ["Data Science", "Python", "Analytics"]
+        "description": "KI-basierte Prototypen und UIs für verschiedene Tools.",
+        "tags": ["BIM", "IFC", "React.js"]
       },
       {
         "thread": "work",
-        "date": "2022 – 2023",
-        "start": "2022-08",
+        "date": "2025 – 2025",
+        "start": "2024-01",
         "title": "Werkstudent",
-        "org": "Otto",
+        "org": "Otto Group one.O",
         "location": "Hamburg",
-        "description": "Unterstützung im datengetriebenen E-Commerce-Umfeld eines der größten Online-Händler Europas.",
-        "tags": ["E-Commerce", "Data", "SQL"]
+        "description": "Aufbau des internen KI-Assistenten für mehr als 10.000 aktive Nutzer.",
+        "tags": ["Chat Assistant", "RAG", "Agents"]
       },
       {
         "thread": "education",
-        "date": "seit 2022",
-        "start": "2022-10",
-        "title": "B.Sc. Data Science",
-        "org": "Universität in Hamburg",
-        "location": "Hamburg",
-        "description": "Studium mit Fokus auf Statistik, Machine Learning und Programmierung.",
-        "tags": ["Statistik", "Machine Learning", "Mathematik"]
-      },
-      {
-        "thread": "education",
-        "date": "seit 2022",
-        "start": "2022-09",
+        "current": true,
+        "date": "seit 2024",
+        "start": "2024-07",
         "title": "Stipendiat",
-        "org": "Studienstiftung des Deutschen Volkes",
+        "org": "Studienstiftung",
         "location": "Deutschland",
-        "description": "Förderung durch das größte und älteste Begabtenförderungswerk Deutschlands.",
+        "description": "Gefördert vom größten und ältesten Begabtenförderungswerk Deutschlands.",
         "tags": ["Stipendium", "Netzwerk"]
       },
       {
         "thread": "education",
-        "date": "2021 – 2022",
-        "start": "2021-08",
-        "title": "Freiwilliger / Englischlehrer",
+        "date": "2025 – Anfang 2026",
+        "start": "2025-09",
+        "title": "Erasmus-Austausch",
+        "org": "UPV",
+        "location": "Valencia",
+        "description": "Kurse zu Machine Learning & Cybersecurity auf Spanisch.",
+        "tags": ["Cybersecurity", "Machine Learning", "Spanisch"]
+      },
+      {
+        "thread": "education",
+        "current": true,
+        "date": "seit 2023",
+        "start": "2023-10",
+        "title": "B.Sc. Data Science",
+        "org": "TUHH",
+        "location": "Hamburg",
+        "description": "Studium mit Fokus auf Statistik, Machine Learning und Programmierung.",
+        "tags": ["Mathematik", "Statistik", "Machine Learning"]
+      },
+      {
+        "thread": "education",
+        "date": "2022 – 2023",
+        "start": "2022-08",
+        "title": "Englischlehrer",
         "org": "Freiwilliges Jahr in Ecuador",
         "location": "Ecuador",
-        "description": "Ein Jahr im Ausland: Englischunterricht, interkulturelle Erfahrung und persönliches Wachstum.",
-        "tags": ["Bildung", "Spanisch", "Interkulturell"]
+        "description": "Ein Jahr im Ausland: Englischunterricht, Berge besteigen und eine neue Kultur erleben.",
+        "tags": ["Bildung", "Spanisch", "Kultureller Austausch"]
       }
     ]
   },
@@ -138,8 +158,24 @@
         "city": "stgallen",
         "venue": "St. Gallen",
         "year": "2026",
-        "summary": "Placeholder Text",
+        "summary": "Platzhalter-Text",
         "tech": ["Python", "Streamlit", "scikit-learn"]
+      },
+      {
+        "name": "EY Parthenon Hackathon",
+        "city": "berlin",
+        "venue": "Berlin",
+        "year": "2025",
+        "summary": "KI-basierte Dokumentenanalyse für einen Beratungs-Case",
+        "tech": ["Python", "Pandas"]
+      },
+      {
+        "name": "HackXplore",
+        "city": "karlsruhe",
+        "venue": "Karlsruhe",
+        "year": "2025",
+        "summary": "Würth Elektronik Case",
+        "tech": ["Python", "Pandas"]
       },
       {
         "name": "Cheftreff AI Hackathon",
@@ -170,21 +206,70 @@
       "heading": "Wo ich gehackt habe",
       "ariaLabel": "Europakarte mit Hackathon-Orten"
     },
-    "earlier": {
-      "heading": "Frühere Wettbewerbe",
-      "items": [
-        {
-          "title": "Jugend forscht",
-          "description": "Eigenständige Forschungsprojekte während der Schulzeit – wissenschaftliches Arbeiten, Experimentieren und Präsentieren.",
-          "tags": ["Forschung", "MINT"]
-        },
-        {
-          "title": "Jugend debattiert",
-          "description": "Wettbewerb im strukturierten Debattieren – Argumentation, Rhetorik und das Vertreten von Standpunkten.",
-          "tags": ["Rhetorik", "Argumentation"]
-        }
-      ]
+    "placements": {
+      "1": "Gewonnen",
+      "2": "2. Platz",
+      "3": "3. Platz"
     }
+  },
+  "ProjectsPage": {
+    "meta": {
+      "title": "Projekte – Alexander Kranz",
+      "description": "Projekte von Alexander Kranz: Open-Source-Arbeit auf GitHub, der Studierendenclub Campus-AI Hamburg sowie Forschungsaufenthalte und Summer Schools."
+    },
+    "heading": "Projekte",
+    "subheading": "Open-Source-Code, mein KI-Studierendenclub und ein paar akademische Abstecher – das, was ich baue, und die Orte, an denen ich weiterlerne.",
+    "filters": {
+      "all": "Alles",
+      "club": "Community",
+      "coding": "Coding",
+      "academic": "Akademisch"
+    },
+    "featuredLabel": "Aktuell",
+    "emptyState": "Hier ist noch nichts – bald mehr.",
+    "projects": [
+      {
+        "id": "campus-ai",
+        "category": "club",
+        "featured": true,
+        "title": "Campus-AI Hamburg",
+        "org": "Studierendenclub · Mitorganisator",
+        "year": "seit 2025",
+        "description": "Ein studentisch geführter Club, der Menschen aus Hamburgs Hochschulen zusammenbringt, die sich für künstliche Intelligenz begeistern. Wir veranstalten praxisnahe Workshops, bauen gemeinsam Projekte und laden zu Talks ein, die aus KI-Hype echtes Verständnis machen.",
+        "image": "/projects/campus-ai.jpg",
+        "tags": ["Community", "Workshops", "KI"],
+        "link": { "label": "Zum Club", "url": "https://campus-ai-hamburg.de" }
+      },
+      {
+        "id": "portfolio",
+        "category": "coding",
+        "title": "Dieses Portfolio",
+        "org": "Persönliches Projekt",
+        "year": "2026",
+        "description": "Die Seite, auf der du gerade bist – ein zweisprachiges, mehrseitiges Portfolio, gebaut mit Next.js, React und Tailwind CSS. Open Source, also schau gern hinter die Kulissen.",
+        "tags": ["Next.js", "TypeScript", "Tailwind"],
+        "link": { "label": "Auf GitHub ansehen", "url": "https://github.com/alexanderkranz/portfolio" }
+      },
+      {
+        "id": "fls26",
+        "category": "coding",
+        "title": "FLS26",
+        "org": "Hackathon-Projekt",
+        "year": "2026",
+        "description": "Hackathon-Prototyp für den BCG-Platinion-Case beim Cheftreff AI Hackathon 2026.",
+        "tags": ["Next.js", "TypeScript", "Tailwind"],
+        "link": { "label": "Auf GitHub ansehen", "url": "https://github.com/alexanderkranz/portfolio" }
+      },
+      {
+        "id": "reprodicubility",
+        "category": "academic",
+        "title": "reprodICUbility",
+        "org": "Charité – Universitätsmedizin Berlin",
+        "year": "2024",
+        "description": "Projektarbeit zur Reproduzierbarkeit von Studien auf Basis von Intensivstations-Datensätzen.",
+        "tags": ["Machine Learning", "Forschung"]
+      }
+    ]
   },
   "InterestsPage": {
     "meta": {
