@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import type { Variants } from "motion/react";
 import { siteConfig } from "@/config/site";
@@ -89,12 +90,12 @@ export function Hero() {
         </motion.p>
 
         <motion.div variants={item} className="mt-9 flex flex-wrap gap-4">
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition-transform hover:-translate-y-0.5"
           >
             {t("ctaContact")}
-          </a>
+          </Link>
           <a
             href={siteConfig.linkedin}
             target="_blank"

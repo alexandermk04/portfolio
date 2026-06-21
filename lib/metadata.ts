@@ -13,7 +13,8 @@ type PageNamespace =
   | "ProjectsPage"
   | "HackathonsPage"
   | "InterestsPage"
-  | "ContactPage";
+  | "ContactPage"
+  | "ImprintPage";
 
 export async function buildPageMetadata({
   locale,

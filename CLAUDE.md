@@ -23,9 +23,10 @@ homepage plus dedicated subpages, each with its own layout and design.
 |---|---|
 | `/` | Hero ("Moin, I'm Alex"), about lead + facts, teaser cards, short contact section (`#contact`) |
 | `/experience` | Dual-thread vertical timeline: both rails centered, work cards left / education right, knot spacing proportional to elapsed time (`start` fields), mobile merged with badges |
-| `/hackathons` | Ticket-style cards + Europe map of locations + earlier competitions |
-| `/interests` | Stats, interest cards, language cards, marathon map |
+| `/hackathons` | Ticket-style cards, paginated 4 at a time (minimalistic arrow controls) + Europe map of all locations |
+| `/interests` | Stats strip, alternating image/text feature rows (mountaineering w/ Ecuador peak list, scuba diving, marathons w/ embedded mini map), language cards. Photos use the `availableImages` existence-check placeholder pattern |
 | `/contact` | Portrait (placeholder until `public/portrait.jpg` exists), intro, all contact options |
+| `/imprint` | German legal notice (Impressum, § 5 DDG). `noindex`. Address comes from `siteConfig.imprint`; linked from the footer |
 
 The homepage `#contact` section is the short version; the full version is `/contact`.
 Each page: server `page.tsx` (awaits params, calls `setRequestLocale`, builds
@@ -59,8 +60,11 @@ metadata via `buildPageMetadata` in `lib/metadata.ts`) + a client content compon
 ## Open TODOs (placeholder content the owner still needs to replace)
 
 - Hackathon entries in `HackathonsPage.items` (both message files)
+- Interest photos at `public/interests/{mountaineering,diving,marathon}.jpg` (interests page shows glyph placeholders until then)
+- Ecuador peaks/elevations + interest copy in `InterestsPage.adventures` (placeholder peaks — confirm which you summited)
 - Language levels in `InterestsPage.languages`
 - Marathon cities/years in `InterestsPage.marathons`
 - Exact start months (`start` fields) in `ExperiencePage.items` (years correct, months estimated)
 - LinkedIn/GitHub URLs in `config/site.ts`
 - Portrait photo at `public/portrait.jpg` (contact page shows a placeholder until then)
+- **Legal:** real postal address in `siteConfig.imprint` — the `/imprint` page is required by German law and currently shows a placeholder address

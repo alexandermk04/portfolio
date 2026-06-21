@@ -93,5 +93,6 @@ export const CITY_COORDS: Record<string, { lon: number; lat: number }> = {
   munich: { lon: 11.58, lat: 48.14 },
   karlsruhe: { lon: 8.4, lat: 49.01 },
   stgallen: { lon: 9.38, lat: 47.42 },
+  valencia: { lon: -0.60, lat: 39.47},
   malaga: { lon: -4.42, lat: 36.72 },
 };

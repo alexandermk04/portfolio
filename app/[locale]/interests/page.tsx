@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
@@ -21,10 +23,20 @@ export default async function InterestsPage({ params }: Props) {
   setRequestLocale(locale as Locale);
   const t = await getTranslations("InterestsPage");
 
+  // Mirror the contact/projects pattern: only surface a photo once the file
+  // actually exists in /public, otherwise the row shows a glyph placeholder.
+  const adventures = t.raw("adventures.items") as { image?: string }[];
+  const availableImages = adventures
+    .map((a) => a.image)
+    .filter(
+      (src): src is string =>
+        Boolean(src) && existsSync(join(process.cwd(), "public", src!)),
+    );
+
   return (
     <>
       <PageHeader title={t("heading")} lead={t("subheading")} />
-      <InterestsContent />
+      <InterestsContent availableImages={availableImages} />
     </>
   );
 }

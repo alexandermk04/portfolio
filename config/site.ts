@@ -5,13 +5,20 @@
 export const siteConfig = {
   name: "Alexander Kranz",
   // Used for canonical URLs, sitemap, Open Graph. Override via NEXT_PUBLIC_SITE_URL.
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://alexanderkranz.de",
-  email: "alexanderkranz007@gmail.com",
-  // TODO: confirm these handles/URLs
-  linkedin: "https://www.linkedin.com/in/alexander-kranz",
-  github: "https://github.com/alexanderkranz",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://alexander.kranz.eu",
+  email: "alexanderkranz.contact@gmail.com",
+  linkedin: "https://www.linkedin.com/in/alexander-kranz-a32628257",
+  github: "https://github.com/alexandermk04",
   location: {
     city: "Hamburg",
     country: "DE",
+  },
+  // Legal data shown in the Impressum (/imprint). Required by German law
+  // (§ 5 DDG).
+  imprint: {
+    name: "Alexander Kranz",
+    street: "Rostocker Str. 15",
+    postalCode: "20099",
+    city: "Hamburg",
   },
 } as const;

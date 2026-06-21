@@ -32,7 +32,7 @@
     "facts": [
       { "label": "Wohnort", "value": "Hamburg" },
       { "label": "Studium", "value": "B.Sc. Data Science" },
-      { "label": "Aktuell", "value": "Werkstudent @ Deutsche Bahn" },
+      { "label": "Aktuell", "value": "Werkstudent @ DB E&C" },
       { "label": "Förderung", "value": "Studienstiftung des Deutschen Volkes" }
     ],
     "teasers": {
@@ -65,7 +65,7 @@
       "description": "Der Weg von Alexander Kranz: Werkstudent bei der Deutschen Bahn und Otto, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und ein Freiwilliges Jahr in Ecuador."
     },
     "heading": "Werdegang",
-    "intro": "Von Schulwettbewerben über ein Freiwilliges Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn – das sind die Stationen, die mich geprägt haben.",
+    "intro": "Von einem Freiwilligen Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn – das sind die Stationen, die mich geprägt haben.",
     "currentHeading": "Aktuell",
     "threads": {
       "work": "Arbeit",
@@ -151,15 +151,23 @@
         "venue": "Hamburg",
         "year": "2026",
         "summary": "BCG Platinion Case",
-        "tech": ["Python", "FastAPI", "React"]
+        "tech": ["Python", "Next.js", "ElevenLabs"]
       },
       {
         "name": "START Hack",
         "city": "stgallen",
         "venue": "St. Gallen",
         "year": "2026",
-        "summary": "Platzhalter-Text",
-        "tech": ["Python", "Streamlit", "scikit-learn"]
+        "summary": "Verarbeitung von Material Test Daten",
+        "tech": ["Python", "Next.js", "Langchain"]
+      },
+      {
+        "name": "Dedalus Datathon",
+        "city": "valencia",
+        "venue": "Valencia",
+        "year": "2025",
+        "summary": "Chat-basierter Assisten für Mediziner",
+        "tech": ["Python", "Next.js", "Gemini API"]
       },
       {
         "name": "EY Parthenon Hackathon",
@@ -167,7 +175,8 @@
         "venue": "Berlin",
         "year": "2025",
         "summary": "KI-basierte Dokumentenanalyse für einen Beratungs-Case",
-        "tech": ["Python", "Pandas"]
+        "placement": 1,
+        "tech": ["Python", "Pandas", "Azure OpenAI"]
       },
       {
         "name": "HackXplore",
@@ -175,7 +184,8 @@
         "venue": "Karlsruhe",
         "year": "2025",
         "summary": "Würth Elektronik Case",
-        "tech": ["Python", "Pandas"]
+        "placement": 3,
+        "tech": ["Python", "Azure OpenAI", "Streamlit"]
       },
       {
         "name": "Cheftreff AI Hackathon",
@@ -183,7 +193,7 @@
         "venue": "Hamburg",
         "year": "2025",
         "summary": "Netlight x World Food Programme Case",
-        "tech": ["Python", "Pandas"]
+        "tech": ["Python", "Streamlit", "Langchain"]
       },
       {
         "name": "START Hack",
@@ -199,9 +209,14 @@
         "venue": "Hamburg",
         "year": "2024",
         "summary": "Otto Dörner Demand Forecasting",
-        "tech": ["Python", "Pandas"]
+        "placement": 1,
+        "tech": ["Python", "Pandas", "scikit-learn"]
       }
     ],
+    "pagination": {
+      "prev": "Frühere Hackathons",
+      "next": "Weitere Hackathons"
+    },
     "map": {
       "heading": "Wo ich gehackt habe",
       "ariaLabel": "Europakarte mit Hackathon-Orten"
@@ -215,10 +230,10 @@
   "ProjectsPage": {
     "meta": {
       "title": "Projekte – Alexander Kranz",
-      "description": "Projekte von Alexander Kranz: Open-Source-Arbeit auf GitHub, der Studierendenclub Campus-AI Hamburg sowie Forschungsaufenthalte und Summer Schools."
+      "description": "Projekte von Alexander Kranz: Öffentliche Repositories auf GitHub, der Studierendenclub Campus-AI Hamburg sowie Forschungsaufenthalte und Summer Schools."
     },
     "heading": "Projekte",
-    "subheading": "Open-Source-Code, mein KI-Studierendenclub und ein paar akademische Abstecher – das, was ich baue, und die Orte, an denen ich weiterlerne.",
+    "subheading": "Öffentliche Repositories, mein KI-Studierendenclub und akademische Abstecher – das, was ich baue, und die Orte, an denen ich weiterlerne.",
     "filters": {
       "all": "Alles",
       "club": "Community",
@@ -236,7 +251,7 @@
         "org": "Studierendenclub · Mitorganisator",
         "year": "seit 2025",
         "description": "Ein studentisch geführter Club, der Menschen aus Hamburgs Hochschulen zusammenbringt, die sich für künstliche Intelligenz begeistern. Wir veranstalten praxisnahe Workshops, bauen gemeinsam Projekte und laden zu Talks ein, die aus KI-Hype echtes Verständnis machen.",
-        "image": "/projects/campus-ai.jpg",
+        "image": "/projects/cai_banner.png",
         "tags": ["Community", "Workshops", "KI"],
         "link": { "label": "Zum Club", "url": "https://campus-ai-hamburg.de" }
       },
@@ -256,9 +271,10 @@
         "title": "FLS26",
         "org": "Hackathon-Projekt",
         "year": "2026",
-        "description": "Hackathon-Prototyp für den BCG-Platinion-Case beim Cheftreff AI Hackathon 2026.",
-        "tags": ["Next.js", "TypeScript", "Tailwind"],
-        "link": { "label": "Auf GitHub ansehen", "url": "https://github.com/alexanderkranz/portfolio" }
+        "description": "Unser mit 'Best Use of ElevenLabs' ausgezeichneter Prototyp für den BCG-Platinion-Case beim Cheftreff AI Hackathon 2026.",
+        "image": "/projects/fls_26.jpeg",
+        "tags": ["Next.js", "Python", "ElevenLabs"],
+        "link": { "label": "Auf GitHub ansehen", "url": "https://github.com/alexandermk04/bogosort-fls-26" }
       },
       {
         "id": "reprodicubility",
@@ -279,24 +295,45 @@
     "heading": "Mehr als Daten",
     "subheading": "Was mich neben dem Studium antreibt.",
     "stats": [
+      { "value": "6.263 m", "label": "höchster Gipfel" },
       { "value": "2", "label": "Marathons gelaufen" },
-      { "value": "42,195 km", "label": "pro Marathon" },
-      { "value": "∞", "label": "Neugier" }
+      { "value": "3", "label": "Sprachen" }
     ],
-    "items": [
-      {
-        "title": "Laufen & Ausdauer",
-        "description": "Zwei Marathons in den Beinen. Laufen lehrt mich Disziplin, Geduld und das Vertrauen, große Ziele Schritt für Schritt zu erreichen."
-      },
-      {
-        "title": "Hackathons & Coding",
-        "description": "Ich liebe es, in kurzer Zeit etwas Greifbares zu bauen und mit anderen an Lösungen zu tüfteln."
-      },
-      {
-        "title": "Lernen & Sprachen",
-        "description": "Durch mein Jahr in Ecuador spreche ich Spanisch und schätze andere Kulturen und Perspektiven."
-      }
-    ],
+    "adventures": {
+      "items": [
+        {
+          "id": "mountaineering",
+          "eyebrow": "Ecuador",
+          "title": "Hochtouren in den Anden",
+          "description": "Aus meinem Austauschjahr in Ecuador wurde eine Liebe zu den Anden. Mit Seil und Steigeisen habe ich mehrere der vergletscherten Vulkane des Landes bestiegen — Stirnlampe an, Aufbruch Stunden vor Sonnenaufgang, um den Gipfel mit dem ersten Licht über der Kordillere zu erreichen.",
+          "image": "/interests/chimborazo.jpeg",
+          "imageAlt": "Sonnenaufgang auf einem vergletscherten Andengipfel in Ecuador",
+          "peaks": [
+            { "name": "Chimborazo", "elevation": "6.263 m" },
+            { "name": "Cayambe", "elevation": "5.790 m" },
+            { "name": "Iliniza Sur", "elevation": "5.248 m" },
+            { "name": "Tungurahua", "elevation": "5.023 m" },
+            { "name": "Carihuairazo", "elevation": "5.018 m" }
+          ]
+        },
+        {
+          "id": "diving",
+          "eyebrow": "Unter der Oberfläche",
+          "title": "Tauchen",
+          "description": "Wann immer ein Meer in der Nähe ist, bin ich drin. Tauchen ist mein Gegengewicht zu den Bergen — langsam, schwerelos und still, während sich wenige Meter unter der Oberfläche ein ganzes Ökosystem auftut.",
+          "image": "/interests/diver.jpeg",
+          "imageAlt": "Taucher an einem Korallenriff"
+        },
+        {
+          "id": "marathons",
+          "eyebrow": "42,195 km",
+          "title": "Marathonlaufen",
+          "description": "Zwei Marathons gelaufen — und angefixt. Die lange Strecke lehrt Geduld und das ruhige Vertrauen, dass große Ziele Kilometer für Kilometer fallen. Die Karte zeigt, wo ich am Start stand.",
+          "image": "/interests/marathon.jpeg",
+          "imageAlt": "Läufer bei einem Stadtmarathon"
+        }
+      ]
+    },
     "languages": {
       "heading": "Sprachen",
       "items": [
@@ -306,7 +343,6 @@
       ]
     },
     "marathons": {
-      "heading": "Marathons",
       "ariaLabel": "Europakarte mit Marathon-Orten",
       "items": [
         { "city": "hamburg", "label": "Haspa Marathon Hamburg", "year": "2026" },
@@ -336,10 +372,25 @@
       { "id": "github", "label": "GitHub ansehen", "hint": "Code, Experimente und Side Projects" }
     ]
   },
+  "ImprintPage": {
+    "meta": {
+      "title": "Impressum – Alexander Kranz",
+      "description": "Impressum für alexanderkranz.de gemäß § 5 DDG."
+    },
+    "heading": "Impressum",
+    "intro": "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz).",
+    "providerHeading": "Angeboten von",
+    "contactHeading": "Kontakt",
+    "emailLabel": "E-Mail",
+    "responsibleHeading": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+    "disclaimerHeading": "Haftung für Inhalte",
+    "disclaimer": "Als Diensteanbieter bin ich gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich. Ich bin nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt; eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werde ich diese Inhalte umgehend entfernen."
+  },
   "Footer": {
     "rights": "Alle Rechte vorbehalten.",
     "builtWith": "Gebaut mit Next.js & Tailwind CSS.",
-    "contactCta": "Lass uns sprechen"
+    "contactCta": "Lass uns sprechen",
+    "imprint": "Impressum"
   },
   "LanguageToggle": {
     "label": "Sprache wechseln",

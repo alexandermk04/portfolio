@@ -11,13 +11,14 @@ export function Footer() {
         <p>
           © {new Date().getFullYear()} {siteConfig.name}. {t("rights")}
         </p>
-        <Link
-          href="/contact"
-          className="font-medium text-accent transition-colors hover:text-fg"
-        >
-          {t("contactCta")} →
-        </Link>
-        <p>{t("builtWith")}</p>
+        <nav className="flex items-center gap-5">
+          <Link
+            href="/imprint"
+            className="font-medium transition-colors hover:text-fg"
+          >
+            {t("imprint")}
+          </Link>
+        </nav>
       </div>
     </footer>
   );
