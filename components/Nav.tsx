@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { CSSProperties } from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageToggle } from "./LanguageToggle";
 
@@ -30,11 +30,9 @@ export function Nav() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <motion.header
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+    <header
+      style={{ "--enter-y": "-80px" } as CSSProperties}
+      className={`animate-in fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled ? "glass" : "border-b border-transparent"
       }`}
     >
@@ -108,6 +106,6 @@ export function Nav() {
           </div>
         </div>
       )}
-    </motion.header>
+    </header>
   );
 }

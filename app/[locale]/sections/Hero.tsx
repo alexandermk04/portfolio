@@ -1,16 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { CSSProperties } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import type { Variants } from "motion/react";
 import { siteConfig } from "@/config/site";
-import { EASE } from "@/lib/motion";
 
 export function Hero() {
   const t = useTranslations("Hero");
-  const reduce = useReducedMotion();
   const roles = t.raw("roles") as string[];
   const [index, setIndex] = useState(0);
 
@@ -21,14 +18,7 @@ export function Hero() {
     return () => clearInterval(id);
   }, [roles.length]);
 
-  const container: Variants = {
-    hidden: {},
-    show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
-  };
-  const item: Variants = {
-    hidden: { opacity: 0, y: reduce ? 0 : 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } },
-  };
+  const enter = (delay: number) => ({ "--enter-delay": `${delay}s` } as CSSProperties);
 
   return (
     <section
@@ -43,53 +33,40 @@ export function Hero() {
         <div className="absolute -bottom-24 left-10 h-[28rem] w-[28rem] rounded-full bg-accent/10 blur-[120px] animate-aurora [animation-delay:-12s]" />
       </div>
 
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="mx-auto w-full max-w-6xl"
-      >
-        <motion.p
-          variants={item}
-          className="text-sm font-semibold uppercase tracking-[0.25em] text-accent"
+      <div className="mx-auto w-full max-w-6xl">
+        <p
+          className="animate-in text-sm font-semibold uppercase tracking-[0.25em] text-accent"
+          style={enter(0.1)}
         >
           {t("greeting")}
-        </motion.p>
+        </p>
 
-        <motion.h1
-          variants={item}
-          className="mt-4 font-display text-6xl font-extrabold leading-[0.95] tracking-tight text-fg sm:text-8xl lg:text-9xl"
+        <h1
+          className="animate-in mt-4 font-display text-6xl font-extrabold leading-[0.95] tracking-tight text-fg sm:text-8xl lg:text-9xl"
+          style={enter(0.22)}
         >
           {t("shortName")}
           <span className="text-accent">.</span>
-        </motion.h1>
+        </h1>
 
-        <motion.div
-          variants={item}
-          className="mt-6 flex h-9 items-center text-xl font-semibold text-fg sm:text-2xl"
+        <div
+          className="animate-in mt-6 flex h-9 items-center text-xl font-semibold text-fg sm:text-2xl"
+          style={enter(0.34)}
         >
           <span className="mr-2 text-muted">›</span>
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.span
-              key={index}
-              initial={{ opacity: 0, y: reduce ? 0 : 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: reduce ? 0 : -12 }}
-              transition={{ duration: 0.4 }}
-            >
-              {roles[index]}
-            </motion.span>
-          </AnimatePresence>
-        </motion.div>
+          <span key={index} className="role-swap inline-block">
+            {roles[index]}
+          </span>
+        </div>
 
-        <motion.p
-          variants={item}
-          className="mt-7 max-w-xl text-lg leading-relaxed text-muted"
+        <p
+          className="animate-in mt-7 max-w-xl text-lg leading-relaxed text-muted"
+          style={enter(0.46)}
         >
           {t("tagline")}
-        </motion.p>
+        </p>
 
-        <motion.div variants={item} className="mt-9 flex flex-wrap gap-4">
+        <div className="animate-in mt-9 flex flex-wrap gap-4" style={enter(0.58)}>
           <Link
             href="/contact"
             className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition-transform hover:-translate-y-0.5"
@@ -104,8 +81,8 @@ export function Hero() {
           >
             {t("ctaLinkedin")}
           </a>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       <a
         href="#about"

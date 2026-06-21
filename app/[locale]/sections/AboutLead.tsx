@@ -1,12 +1,10 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/Reveal";
 
 type Fact = { label: string; value: string };
 
-export function AboutLead() {
-  const t = useTranslations("Home");
+export async function AboutLead() {
+  const t = await getTranslations("Home");
   const facts = t.raw("facts") as Fact[];
 
   return (

@@ -1,7 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "motion/react";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/Reveal";
 
@@ -61,9 +58,8 @@ function Motif({ page }: { page: Page }) {
   );
 }
 
-export function Teasers() {
-  const t = useTranslations("Home");
-  const reduce = useReducedMotion();
+export async function Teasers() {
+  const t = await getTranslations("Home");
 
   return (
     <section id="explore" className="scroll-mt-24 bg-bg-soft px-5 py-20 sm:py-28">
@@ -74,19 +70,11 @@ export function Teasers() {
           </p>
         </Reveal>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {PAGES.map((page, i) => (
-            <motion.div
-              key={page}
-              initial={{ opacity: 0, y: reduce ? 0 : 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: 0.08 * i }}
-              whileHover={reduce ? undefined : { y: -6 }}
-              className="h-full"
-            >
+          {PAGES.map((page) => (
+            <Reveal key={page} className="h-full" y={28}>
               <Link
                 href={`/${page}`}
-                className={`group flex h-full flex-col rounded-2xl border bg-surface/50 p-6 transition-colors hover:border-accent/60 ${
+                className={`group flex h-full flex-col rounded-2xl border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-accent/60 ${
                   page === "hackathons" ? "border-2 border-dashed border-border" : "border-border"
                 }`}
               >
@@ -104,7 +92,7 @@ export function Teasers() {
                   </span>
                 </span>
               </Link>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>

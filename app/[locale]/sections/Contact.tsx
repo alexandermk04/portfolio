@@ -1,13 +1,11 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { siteConfig } from "@/config/site";
 
-export function Contact() {
-  const t = useTranslations("Contact");
+export async function Contact() {
+  const t = await getTranslations("Contact");
 
   return (
     <Section id="contact" heading={t("heading")}>

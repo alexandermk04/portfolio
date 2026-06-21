@@ -91,6 +91,47 @@ body {
   border: 1px solid var(--color-border);
 }
 
+/* Entrance animations — CSS-driven so content paints with the HTML and never
+   waits for JS hydration. Content is visible by default; movement is only
+   added where motion is allowed (and, for reveals, where the browser supports
+   scroll-driven animations). */
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--enter-y, 20px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Load-based entrance for above-the-fold content (e.g. the hero). */
+  .animate-in {
+    opacity: 0;
+    animation: enter-up 0.6s cubic-bezier(0.21, 0.47, 0.32, 0.98) both;
+    animation-delay: var(--enter-delay, 0s);
+  }
+
+  /* Quick fade used by the hero's rotating role (replays on each swap). */
+  .role-swap {
+    --enter-y: 12px;
+    animation: enter-up 0.4s cubic-bezier(0.21, 0.47, 0.32, 0.98) both;
+  }
+
+  /* Scroll-driven reveal for below-the-fold content. Falls back to fully
+     visible in browsers without scroll-driven animation support. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      opacity: 0;
+      animation: enter-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
