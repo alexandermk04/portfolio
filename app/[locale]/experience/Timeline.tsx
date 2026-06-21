@@ -33,9 +33,32 @@ const monthsOf = (start: string) => {
 
 const byStartDesc = (a: Item, b: Item) => monthsOf(b.start) - monthsOf(a.start);
 
-function Knot({ current, side }: { current?: boolean; side: "left" | "right" }) {
+/** Map-style marker: a solid teal dot with a cream ring that masks the rail
+ *  passing behind it. Ongoing items emit an expanding ping, mirroring the
+ *  pulse on LocationMap (scale 1 → 2.5, opacity 0.4 → 0). */
+function PulseDot({ current }: { current?: boolean }) {
   const reduce = useReducedMotion();
 
+  return (
+    <>
+      {current && !reduce && (
+        <motion.span
+          aria-hidden
+          // Seamless loop: opacity starts AND ends at 0, so the repeat boundary
+          // is invisible→invisible with no flash, no matter where the transform
+          // resets. The ping fades in from the dot, then out as it expands.
+          className="absolute inset-0 rounded-full bg-accent opacity-0"
+          initial={{ scale: 1, opacity: 0 }}
+          animate={{ scale: [1, 1.6, 2.5], opacity: [0, 0.4, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
+        />
+      )}
+      <span className="relative h-3.5 w-3.5 rounded-full bg-accent ring-2 ring-bg" />
+    </>
+  );
+}
+
+function Knot({ current, side }: { current?: boolean; side: "left" | "right" }) {
   return (
     <>
       {/* connector from card edge to the rail */}
@@ -50,36 +73,16 @@ function Knot({ current, side }: { current?: boolean; side: "left" | "right" }) 
           side === "right" ? "-right-[31px]" : "-left-[31px]"
         }`}
       >
-        {current && !reduce && (
-          <motion.span
-            aria-hidden
-            className="absolute inset-0 rounded-full bg-accent"
-            initial={{ scale: 1, opacity: 0.4 }}
-            animate={{ scale: [1, 2], opacity: [0.4, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
-          />
-        )}
-        <span className="relative h-3.5 w-3.5 rounded-full border-2 border-accent bg-bg" />
+        <PulseDot current={current} />
       </span>
     </>
   );
 }
 
 function MobileKnot({ current }: { current?: boolean }) {
-  const reduce = useReducedMotion();
-
   return (
-    <span className="absolute -left-[7px] top-1.5 flex h-3.5 w-3.5">
-      {current && !reduce && (
-        <motion.span
-          aria-hidden
-          className="absolute inset-0 rounded-full bg-accent"
-          initial={{ scale: 1, opacity: 0.4 }}
-          animate={{ scale: [1, 2], opacity: [0.4, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
-        />
-      )}
-      <span className="relative h-3.5 w-3.5 rounded-full border-2 border-accent bg-bg" />
+    <span className="absolute -left-[7px] top-1.5 z-10 flex h-3.5 w-3.5">
+      <PulseDot current={current} />
     </span>
   );
 }
@@ -145,9 +148,11 @@ function CurrentlyBand({ items, heading }: { items: Item[]; heading: string }) {
             {!reduce && (
               <motion.span
                 aria-hidden
-                className="absolute inset-0 rounded-full bg-accent"
-                initial={{ scale: 1, opacity: 0.4 }}
-                animate={{ scale: [1, 2.4], opacity: [0.4, 0] }}
+                // Seamless loop — see PulseDot: opacity starts and ends at 0 so
+                // the repeat boundary never flashes.
+                className="absolute inset-0 rounded-full bg-accent opacity-0"
+                initial={{ scale: 1, opacity: 0 }}
+                animate={{ scale: [1, 1.6, 2.4], opacity: [0, 0.4, 0] }}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
               />
             )}

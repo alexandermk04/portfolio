@@ -19,10 +19,10 @@ export function PersonJsonLd({ locale }: { locale: string }) {
       addressLocality: siteConfig.location.city,
       addressCountry: siteConfig.location.country,
     },
-    worksFor: { "@type": "Organization", name: "Deutsche Bahn" },
+    worksFor: { "@type": "Organization", name: "DB E&C" },
     alumniOf: [
       { "@type": "Organization", name: "Otto" },
-      { "@type": "CollegeOrUniversity", name: "Hamburg" },
+      { "@type": "CollegeOrUniversity", name: "TUHH" },
     ],
     award: "Studienstiftung des Deutschen Volkes",
     knowsLanguage: ["German", "English", "Spanish"],
@@ -32,6 +32,7 @@ export function PersonJsonLd({ locale }: { locale: string }) {
       "Statistics",
       "Python",
       "Running",
+      "Diving"
     ],
   };
 

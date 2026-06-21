@@ -297,7 +297,7 @@
     "stats": [
       { "value": "6.263 m", "label": "höchster Gipfel" },
       { "value": "2", "label": "Marathons gelaufen" },
-      { "value": "3", "label": "Sprachen" }
+      { "value": "3", "label": "Sprachen gelernt" }
     ],
     "adventures": {
       "items": [
@@ -305,7 +305,7 @@
           "id": "mountaineering",
           "eyebrow": "Ecuador",
           "title": "Hochtouren in den Anden",
-          "description": "Aus meinem Austauschjahr in Ecuador wurde eine Liebe zu den Anden. Mit Seil und Steigeisen habe ich mehrere der vergletscherten Vulkane des Landes bestiegen — Stirnlampe an, Aufbruch Stunden vor Sonnenaufgang, um den Gipfel mit dem ersten Licht über der Kordillere zu erreichen.",
+          "description": "Aus meinem Austauschjahr in Ecuador wurde eine Liebe zu den Anden. Mit Seil und Steigeisen habe ich mehrere der vergletscherten Vulkane des Landes bestiegen — und am Ende Punkt gestanden, der auf der Erde der Sonne am nächsten ist.",
           "image": "/interests/chimborazo.jpeg",
           "imageAlt": "Sonnenaufgang auf einem vergletscherten Andengipfel in Ecuador",
           "peaks": [
