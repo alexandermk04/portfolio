@@ -263,7 +263,7 @@
         "year": "2026",
         "description": "The site you're on right now - a bilingual, multi-page portfolio built with Next.js, React and Tailwind CSS. Open source, so feel free to peek under the hood.",
         "tags": ["Next.js", "TypeScript", "Tailwind"],
-        "link": { "label": "View on GitHub", "url": "https://github.com/alexanderkranz/portfolio" }
+        "link": { "label": "View on GitHub", "url": "https://github.com/alexandermk04/portfolio" }
       },
       {
         "id": "fls26",
