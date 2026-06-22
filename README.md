@@ -1,7 +1,6 @@
 # Alexander Kranz — Personal Portfolio
 
-Bilingual (🇩🇪 / 🇬🇧) personal website built to showcase skills and interests and to rank
-for "Alexander Kranz" on Google.
+Bilingual (🇩🇪 / 🇬🇧) personal website built to showcase skills and interests.
 
 **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Motion · next-intl ·
 deployed on Vercel.
