@@ -79,6 +79,17 @@ metadata via `buildPageMetadata` in `lib/metadata.ts`) + a client content compon
   "jump"). Scroll reveals (`.reveal`) and the hero role-swap still fade via
   `enter-up` — fine below the fold. Always respect `useReducedMotion` /
   `prefers-reduced-motion` (CSS falls back to fully visible).
+- **The fixed `Nav` header has one consistent, near-opaque background
+  (`bg-bg/95`) with no `backdrop-filter` and no scroll-based toggle.** It used to
+  be transparent at the top and switch to a `glass` (backdrop-blur) bar on
+  scroll. Over the hero's continuously animating aurora, a transparent/glass
+  header forced the browser to re-composite (and backdrop-blur to re-blur) that
+  strip every frame, which starved input handling and made the nav feel
+  unclickable during load — fine only once scrolled, when the aurora moves out
+  from behind it. An opaque background occludes the aurora so the header is a
+  cheap static layer at any scroll position, and dropping the `scrolled` state
+  removes the header's dependency on JS. Do not reintroduce a
+  transparent/backdrop-blur header over the animated hero.
 
 ## Maintaining this file
 

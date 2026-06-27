@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { CSSProperties } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -17,24 +17,21 @@ const ITEMS = [
 export function Nav() {
   const t = useTranslations("Nav");
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const isActive = (href: string) => pathname === href;
 
   return (
     <header
       style={{ "--enter-y": "-80px" } as CSSProperties}
-      className={`animate-in fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled ? "glass" : "border-b border-transparent"
-      }`}
+      // One consistent, near-opaque background — no scroll toggle, no
+      // backdrop-filter. A transparent header at the top composited over the
+      // continuously animating hero aurora forced a per-frame re-blend of that
+      // strip (and backdrop-blur would re-blur the moving aurora every frame),
+      // which starved input handling and made the nav feel unclickable on load.
+      // An opaque-enough background occludes the aurora so the header is a
+      // static, cheap layer regardless of scroll position.
+      className="animate-in fixed inset-x-0 top-0 z-50 border-b border-border bg-bg/95"
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
         <Link href="/" className="font-display text-base font-extrabold tracking-tight">

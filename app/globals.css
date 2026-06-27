@@ -133,6 +133,11 @@ body {
   .animate-in {
     animation: rise-in 0.6s cubic-bezier(0.21, 0.47, 0.32, 0.98) both;
     animation-delay: var(--enter-delay, 0s);
+    /* Promote to a compositor layer so the entrance transform runs off the
+       main thread. Without this the animation competes with hydration JS,
+       stalls at the `from` offset (header pushed off-screen, hero text low),
+       then snaps to place when hydration finishes — a visible jump. */
+    will-change: transform;
   }
 
   /* Quick fade used by the hero's rotating role (replays on each swap). */
