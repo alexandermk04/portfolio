@@ -26,7 +26,7 @@ export default function OpenGraphImage() {
             fontSize: 26,
             letterSpacing: 6,
             textTransform: "uppercase",
-            color: "#1d7a80",
+            color: "#176b70",
           }}
         >
           {siteConfig.url.replace(/^https?:\/\//, "")}
@@ -42,7 +42,7 @@ export default function OpenGraphImage() {
             color: "#2a2520",
           }}
         >
-          Alexander Kranz<span style={{ color: "#1d7a80" }}>.</span>
+          Alexander Kranz<span style={{ color: "#176b70" }}>.</span>
         </div>
         <div style={{ fontSize: 40, color: "#6e665b", marginTop: 28 }}>
           Data Science · Hamburg · Deutsche Bahn
@@ -52,7 +52,7 @@ export default function OpenGraphImage() {
             width: 120,
             height: 6,
             marginTop: 44,
-            background: "#1d7a80",
+            background: "#176b70",
             borderRadius: 3,
           }}
         />

@@ -27,6 +27,7 @@
     "scroll": "Mehr erfahren"
   },
   "Home": {
+    "aboutHeading": "Über mich",
     "aboutLead": "Daten begeistern mich - genauso wie die Menschen und Geschichten dahinter.",
     "aboutText": "Aufgewachsen in Ahrensburg, studiere ich heute Data Science im Bachelor in Hamburg. Mich fasziniert, wie aus Daten echte Entscheidungen werden - und wie Technologie den Alltag von Menschen verbessern kann.",
     "facts": [
@@ -250,7 +251,7 @@
         "title": "Campus-AI Hamburg",
         "org": "Studierendenclub · Mitorganisator",
         "year": "seit 2025",
-        "description": "Ein studentisch geführter Club, der Menschen aus Hamburgs Hochschulen zusammenbringt, die sich für künstliche Intelligenz begeistern. Wir veranstalten praxisnahe Workshops, bauen gemeinsam Projekte und laden zu Talks ein, die aus KI-Hype echtes Verständnis machen.",
+        "description": "Ein studentisch geführter Club, der Menschen aus Hamburgs Hochschulen zusammenbringt, die sich für künstliche Intelligenz begeistern. Wir veranstalten Hackathons und tauschen Ideen aus, um Hamburg zu einem Zentrum für KI-Innovation zu machen.",
         "image": "/projects/cai_banner.jpeg",
         "tags": ["Community", "Workshops", "KI"],
         "link": { "label": "Zum Club", "url": "https://campus-ai-hamburg.de" }

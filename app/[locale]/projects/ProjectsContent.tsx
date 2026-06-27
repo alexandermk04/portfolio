@@ -94,7 +94,7 @@ export function ProjectsContent({ availableImages }: { availableImages: string[]
                   role="tab"
                   aria-selected={isActive}
                   onClick={() => setActive(filter)}
-                  className={`relative rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors ${
+                  className={`relative inline-flex min-h-11 items-center rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors ${
                     isActive
                       ? "border-accent text-surface"
                       : "border-border text-muted hover:border-accent/60 hover:text-fg"
@@ -140,7 +140,7 @@ export function ProjectsContent({ availableImages }: { availableImages: string[]
                           rel: "noopener noreferrer",
                         }
                       : {})}
-                    className={`group flex h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition-colors hover:border-accent/60 ${
+                    className={`group flex h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-lg hover:shadow-fg/5 ${
                       project.featured ? "flex-col md:flex-row" : "flex-col"
                     }`}
                   >

@@ -56,7 +56,7 @@ function PageArrow({
       onClick={onClick}
       disabled={disabled}
       aria-label={label}
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-fg transition-colors hover:border-accent hover:text-accent disabled:pointer-events-none disabled:opacity-30"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-fg transition-colors hover:border-accent hover:text-accent disabled:pointer-events-none disabled:opacity-30"
     >
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         <path d={direction === "prev" ? "M15 6l-6 6 6 6" : "M9 6l6 6-6 6"} />

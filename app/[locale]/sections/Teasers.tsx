@@ -65,9 +65,9 @@ export async function Teasers() {
     <section id="explore" className="scroll-mt-24 bg-bg-soft px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-accent">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-accent">
             {t("teasers.heading")}
-          </p>
+          </h2>
         </Reveal>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {PAGES.map((page) => (

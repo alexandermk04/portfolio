@@ -27,6 +27,7 @@
     "scroll": "Learn more"
   },
   "Home": {
+    "aboutHeading": "About me",
     "aboutLead": "I'm passionate about data - and just as much about the people and stories behind it.",
     "aboutText": "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions - and how technology can improve people's everyday lives.",
     "facts": [
@@ -250,7 +251,7 @@
         "title": "Campus-AI Hamburg",
         "org": "Student club · Co-organiser",
         "year": "since 2025",
-        "description": "A student-led club connecting people across Hamburg's universities who are curious about artificial intelligence. We run hands-on workshops, build projects together and host talks that turn AI hype into real understanding.",
+        "description": "A student-led club connecting people across Hamburg's universities who are curious about artificial intelligence. We run hackathons and exchange ideas to make Hamburg a hub for AI innovation.",
         "image": "/projects/cai_banner.jpeg",
         "tags": ["Community", "Workshops", "AI"],
         "link": { "label": "Visit the club", "url": "https://campus-ai-hamburg.de" }

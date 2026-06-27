@@ -80,7 +80,7 @@ export default async function ContactPage({ params }: Props) {
                       href={link.href}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noopener noreferrer" : undefined}
-                      className="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 rounded-2xl border border-border bg-surface/50 p-5 transition-colors hover:border-accent/60"
+                      className="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 rounded-2xl border border-border bg-surface/50 p-5 transition duration-300 hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-lg hover:shadow-fg/5"
                     >
                       <span>
                         <span className="block font-display text-lg font-bold">

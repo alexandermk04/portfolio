@@ -22,7 +22,7 @@ export function LanguageToggle() {
           type="button"
           onClick={() => switchTo(l)}
           aria-current={l === locale}
-          className={`rounded-full px-2.5 py-1 uppercase tracking-wide transition-colors ${
+          className={`rounded-full px-3 py-2 uppercase tracking-wide transition-colors ${
             l === locale
               ? "bg-accent text-white"
               : "text-muted hover:text-fg"

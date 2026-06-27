@@ -10,6 +10,7 @@ export async function AboutLead() {
   return (
     <section id="about" className="scroll-mt-24 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
+        <h2 className="sr-only">{t("aboutHeading")}</h2>
         <Reveal>
           <p className="max-w-3xl text-2xl font-medium leading-snug text-fg sm:text-3xl">
             {t("aboutLead")}
