@@ -285,6 +285,16 @@
         "year": "2024",
         "description": "Projektarbeit zur Reproduzierbarkeit von Studien auf Basis von Intensivstations-Datensätzen.",
         "tags": ["Machine Learning", "Forschung"]
+      },{
+        "id": "boting",
+        "category": "coding",
+        "title": "BotING",
+        "org": "Persönliches Projekt",
+        "year": "2024",
+        "description": "Ein Chatbot um die Gerichte der Universitätsmensas in Hamburg in Discord abzurufen, sowie andere hilfreiche Funktionen.",
+        "image": "/projects/boting.jpeg",
+        "tags": ["Python", "Gemini API", "Discord"],
+        "link": { "label": "Auf GitHub ansehen", "url": "https://github.com/alexandermk04/botING" }
       }
     ]
   },

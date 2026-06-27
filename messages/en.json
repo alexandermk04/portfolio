@@ -285,6 +285,17 @@
         "year": "2024",
         "description": "Project work on reproducibility of studies regarding ICU datasets.",
         "tags": ["Machine Learning", "Research"]
+      },
+      {
+        "id": "boting",
+        "category": "coding",
+        "title": "BotING",
+        "org": "Personal project",
+        "year": "2024",
+        "description": "A chatbot to fetch the menus of Hamburg's university canteens in Discord, as well as other helpful features.",
+        "image": "/projects/boting.jpeg",
+        "tags": ["Python", "Gemini API", "Discord"],
+        "link": { "label": "View on GitHub", "url": "https://github.com/alexandermk04/botING" }
       }
     ]
   },
