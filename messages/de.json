@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Alexander Kranz - Data Science Student & Werkstudent in Hamburg",
-    "description": "Persönliche Website von Alexander Kranz: Data-Science-Student in Hamburg, Werkstudent bei der Deutschen Bahn, Stipendiat der Studienstiftung, Marathonläufer und Hackathon-Enthusiast.",
+    "description": "Persönliche Website von Alexander Kranz: Data-Science-Student in Hamburg, Werkstudent bei der Deutschen Bahn und Stipendiat der Studienstiftung.",
     "ogAlt": "Alexander Kranz - Data Science Student in Hamburg"
   },
   "Nav": {
@@ -63,7 +63,7 @@
   "ExperiencePage": {
     "meta": {
       "title": "Werdegang - Alexander Kranz",
-      "description": "Der Weg von Alexander Kranz: Werkstudent bei der Deutschen Bahn und Otto, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und ein Freiwilliges Jahr in Ecuador."
+      "description": "Der Weg von Alexander Kranz: Werkstudent bei der Deutschen Bahn, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und Freiwilligenjahr in Ecuador."
     },
     "heading": "Werdegang",
     "intro": "Von einem Freiwilligen Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn - das sind die Stationen, die mich geprägt haben.",

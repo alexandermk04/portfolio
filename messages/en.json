@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Alexander Kranz - Data Science Student & Working Student in Hamburg",
-    "description": "Personal website of Alexander Kranz: Data Science student in Hamburg, working student at Deutsche Bahn, scholarship holder of the Studienstiftung, marathon runner and hackathon enthusiast.",
+    "title": "Alexander Kranz - Data Science & Working Student in Hamburg",
+    "description": "Personal website of Alexander Kranz - Data Science student in Hamburg, working student at Deutsche Bahn, Studienstiftung scholar and hackathon enthusiast.",
     "ogAlt": "Alexander Kranz - Data Science student in Hamburg"
   },
   "Nav": {
@@ -63,7 +63,7 @@
   "ExperiencePage": {
     "meta": {
       "title": "Experience - Alexander Kranz",
-      "description": "The path of Alexander Kranz: working student at Deutsche Bahn and Otto, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
+      "description": "The path of Alexander Kranz: working student at Deutsche Bahn, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
     },
     "heading": "Experience",
     "intro": "From a voluntary year in Ecuador to working-student roles at Otto and Deutsche Bahn - these are the stations that shaped me.",
