@@ -74,6 +74,16 @@
     },
     "items": [
       {
+        "thread": "education",
+        "date": "July 2026",
+        "start": "2026-07",
+        "title": "ISWC 2026",
+        "org": "UAH | DLR",
+        "location": "Huntsville, Alabama, USA | Neustrelitz, Germany",
+        "description": "Summer school on Space Weather with a focus on machine learning and data analysis.",
+        "tags": ["Space Weather", "Research", "Machine Learning"]
+      },
+      {
         "thread": "work",
         "current": true,
         "date": "since 2026",
