@@ -7,7 +7,7 @@ export const siteConfig = {
   // Used for canonical URLs, sitemap, Open Graph. Override via NEXT_PUBLIC_SITE_URL.
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://alexander.kranz.eu",
   email: "alexanderkranz.contact@gmail.com",
-  linkedin: "https://www.linkedin.com/in/alexander-kranz-a32628257",
+  linkedin: "https://www.linkedin.com/in/alex-kranz",
   github: "https://github.com/alexandermk04",
   location: {
     city: "Hamburg",

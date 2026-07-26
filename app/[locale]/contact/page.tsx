@@ -15,7 +15,7 @@ type ContactOption = { id: "email" | "linkedin" | "github"; label: string; hint:
 
 const OPTION_LINKS: Record<ContactOption["id"], { href: string; value: string; external: boolean }> = {
   email: { href: `mailto:${siteConfig.email}`, value: siteConfig.email, external: false },
-  linkedin: { href: siteConfig.linkedin, value: "linkedin.com/in/alexander-kranz-a32628257/", external: true },
+  linkedin: { href: siteConfig.linkedin, value: "linkedin.com/in/alex-kranz/", external: true },
   github: { href: siteConfig.github, value: "github.com/alexandermk04", external: true },
 };
 
