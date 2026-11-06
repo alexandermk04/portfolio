@@ -10,8 +10,8 @@ export function PersonJsonLd({ locale }: { locale: string }) {
     jobTitle: locale === "de" ? "Data-Science-Student" : "Data Science Student",
     description:
       locale === "de"
-        ? "Data-Science-Student in Hamburg, Werkstudent bei der Deutschen Bahn und Stipendiat der Studienstiftung des Deutschen Volkes."
-        : "Data Science student in Hamburg, working student at Deutsche Bahn and scholarship holder of the Studienstiftung des Deutschen Volkes.",
+        ? "Data-Science-Student, Praktikant bei Tesla in der Gigafactory Berlin-Brandenburg und Stipendiat der Studienstiftung des Deutschen Volkes."
+        : "Data Science student, intern at Tesla Gigafactory Berlin-Brandenburg and scholarship holder of the Studienstiftung des Deutschen Volkes.",
     email: `mailto:${siteConfig.email}`,
     sameAs: [siteConfig.linkedin, siteConfig.github],
     address: {
@@ -19,9 +19,10 @@ export function PersonJsonLd({ locale }: { locale: string }) {
       addressLocality: siteConfig.location.city,
       addressCountry: siteConfig.location.country,
     },
-    worksFor: { "@type": "Organization", name: "DB E&C" },
+    worksFor: { "@type": "Organization", name: "Tesla" },
     alumniOf: [
       { "@type": "Organization", name: "Otto" },
+      { "@type": "Organization", name: "DB E&C" },
       { "@type": "CollegeOrUniversity", name: "UPV" },
     ],
     award: "Studienstiftung des Deutschen Volkes",

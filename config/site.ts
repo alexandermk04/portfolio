@@ -10,15 +10,15 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/alex-kranz",
   github: "https://github.com/alexandermk04",
   location: {
-    city: "Hamburg",
+    city: "Berlin",
     country: "DE",
   },
   // Legal data shown in the Impressum (/imprint). Required by German law
   // (§ 5 DDG).
   imprint: {
     name: "Alexander Kranz",
-    street: "Rostocker Str. 15",
-    postalCode: "20099",
-    city: "Hamburg",
+    street: "Husumweg 13",
+    postalCode: "22926",
+    city: "Ahrensburg",
   },
 } as const;

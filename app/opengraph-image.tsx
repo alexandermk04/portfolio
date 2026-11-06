@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/config/site";
 
-export const alt = "Alexander Kranz - Data Science Student in Hamburg";
+export const alt = "Alexander Kranz - Data Science Student in Berlin";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -45,7 +45,7 @@ export default function OpenGraphImage() {
           Alexander Kranz<span style={{ color: "#176b70" }}>.</span>
         </div>
         <div style={{ fontSize: 40, color: "#6e665b", marginTop: 28 }}>
-          Data Science · Hamburg · Deutsche Bahn
+          Data Science · Berlin · Tesla
         </div>
         <div
           style={{

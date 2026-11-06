@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "title": "Alexander Kranz - Data Science & Working Student in Hamburg",
-    "description": "Personal website of Alexander Kranz - Data Science student in Hamburg, working student at Deutsche Bahn, Studienstiftung scholar and hackathon enthusiast.",
-    "ogAlt": "Alexander Kranz - Data Science student in Hamburg"
+    "title": "Alexander Kranz - Data Science Student & Intern at Tesla in Berlin",
+    "description": "Personal website of Alexander Kranz - Data Science student, intern at Tesla Gigafactory Berlin-Brandenburg, Studienstiftung scholar and hackathon enthusiast.",
+    "ogAlt": "Alexander Kranz - Data Science student in Berlin"
   },
   "Nav": {
     "home": "Home",
@@ -17,11 +17,11 @@
     "shortName": "Alex",
     "roles": [
       "Data Science Student",
-      "Working Student at Deutsche Bahn",
+      "Intern at Tesla",
       "Marathon Runner",
       "Hackathon Enthusiast"
     ],
-    "tagline": "Alexander Kranz, in full - I study Data Science in Hamburg, connecting data, technology and curiosity: at work, in code and out on the running track.",
+    "tagline": "Alexander Kranz, in full - I study Data Science and currently work at Tesla in Berlin, connecting data, technology and curiosity: at work, in code and out on the running track.",
     "ctaContact": "Get in touch",
     "ctaLinkedin": "LinkedIn",
     "scroll": "Learn more"
@@ -29,18 +29,18 @@
   "Home": {
     "aboutHeading": "About me",
     "aboutLead": "I'm passionate about data - and just as much about the people and stories behind it.",
-    "aboutText": "I grew up in Ahrensburg and today I'm pursuing a Bachelor's in Data Science in Hamburg. I'm fascinated by how data turns into real decisions - and how technology can improve people's everyday lives.",
+    "aboutText": "I grew up in Ahrensburg, I'm pursuing a Bachelor's in Data Science at TUHH in Hamburg - and today I live in Berlin, interning at Tesla's Gigafactory. I'm fascinated by how data turns into real decisions - and how technology can improve people's everyday lives.",
     "facts": [
-      { "label": "Based in", "value": "Hamburg" },
+      { "label": "Based in", "value": "Berlin" },
       { "label": "Studies", "value": "B.Sc. Data Science" },
-      { "label": "Currently", "value": "Working Student @ DB E&C" },
+      { "label": "Currently", "value": "Intern @ Tesla" },
       { "label": "Scholarship", "value": "Studienstiftung des Deutschen Volkes" }
     ],
     "teasers": {
       "heading": "Explore",
       "experience": {
         "title": "Experience",
-        "description": "My path so far - work and education as two parallel timelines, from Ahrensburg to Hamburg, via Ecuador.",
+        "description": "My path so far - work and education as two parallel timelines, from Ahrensburg via Ecuador and Hamburg to Berlin.",
         "cta": "View timeline"
       },
       "projects": {
@@ -63,16 +63,27 @@
   "ExperiencePage": {
     "meta": {
       "title": "Experience - Alexander Kranz",
-      "description": "The path of Alexander Kranz: working student at Deutsche Bahn, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
+      "description": "The path of Alexander Kranz: intern at Tesla, working student at Deutsche Bahn and Otto, B.Sc. Data Science in Hamburg, Studienstiftung scholarship and a voluntary year in Ecuador."
     },
     "heading": "Experience",
-    "intro": "From a voluntary year in Ecuador to working-student roles at Otto and Deutsche Bahn - these are the stations that shaped me.",
+    "intro": "From a voluntary year in Ecuador through working-student roles at Otto and Deutsche Bahn to my internship at Tesla - these are the stations that shaped me.",
     "currentHeading": "Right now",
     "threads": {
       "work": "Work",
       "education": "Education & Growth"
     },
     "items": [
+      {
+        "thread": "work",
+        "current": true,
+        "date": "since 2026",
+        "start": "2026-11",
+        "title": "Intern",
+        "org": "Tesla",
+        "location": "Grünheide (Mark), Brandenburg",
+        "description": "AI-based internal applications.",
+        "tags": ["AI", "Machine Learning"]
+      },
       {
         "thread": "education",
         "date": "July 2026",
@@ -360,7 +371,7 @@
       "items": [
         { "greeting": "Moin!", "name": "German", "level": "Native", "levelValue": 5 },
         { "greeting": "Hello!", "name": "English", "level": "Fluent (C1)", "levelValue": 4 },
-        { "greeting": "¡Hola!", "name": "Spanish", "level": "Conversational (B2)", "levelValue": 3 }
+        { "greeting": "¡Hola!", "name": "Spanish", "level": "Fluent (C1)", "levelValue": 4 }
       ]
     },
     "marathons": {

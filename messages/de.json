@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "title": "Alexander Kranz - Data Science Student & Werkstudent in Hamburg",
-    "description": "Persönliche Website von Alexander Kranz: Data-Science-Student in Hamburg, Werkstudent bei der Deutschen Bahn und Stipendiat der Studienstiftung.",
-    "ogAlt": "Alexander Kranz - Data Science Student in Hamburg"
+    "title": "Alexander Kranz - Data Science Student & Praktikant bei Tesla in Berlin",
+    "description": "Persönliche Website von Alexander Kranz: Data-Science-Student, Praktikant bei Tesla in der Gigafactory Berlin-Brandenburg und Stipendiat der Studienstiftung.",
+    "ogAlt": "Alexander Kranz - Data Science Student in Berlin"
   },
   "Nav": {
     "home": "Start",
@@ -17,11 +17,11 @@
     "shortName": "Alex",
     "roles": [
       "Data-Science-Student",
-      "Werkstudent bei der Deutschen Bahn",
+      "Praktikant bei Tesla",
       "Marathonläufer",
       "Hackathon-Enthusiast"
     ],
-    "tagline": "Alexander Kranz, ganz offiziell - ich studiere Data Science in Hamburg und verbinde Daten, Technologie und Neugier: auf der Arbeit, im Code und auf der Laufstrecke.",
+    "tagline": "Alexander Kranz, ganz offiziell - ich studiere Data Science, arbeite gerade bei Tesla in Berlin und verbinde Daten, Technologie und Neugier: auf der Arbeit, im Code und auf der Laufstrecke.",
     "ctaContact": "Kontakt aufnehmen",
     "ctaLinkedin": "LinkedIn",
     "scroll": "Mehr erfahren"
@@ -29,18 +29,18 @@
   "Home": {
     "aboutHeading": "Über mich",
     "aboutLead": "Daten begeistern mich - genauso wie die Menschen und Geschichten dahinter.",
-    "aboutText": "Aufgewachsen in Ahrensburg, studiere ich heute Data Science im Bachelor in Hamburg. Mich fasziniert, wie aus Daten echte Entscheidungen werden - und wie Technologie den Alltag von Menschen verbessern kann.",
+    "aboutText": "Aufgewachsen in Ahrensburg, studiere ich Data Science im Bachelor an der TUHH in Hamburg - und lebe heute in Berlin, wo ich ein Praktikum bei Tesla in der Gigafactory mache. Mich fasziniert, wie aus Daten echte Entscheidungen werden - und wie Technologie den Alltag von Menschen verbessern kann.",
     "facts": [
-      { "label": "Wohnort", "value": "Hamburg" },
+      { "label": "Wohnort", "value": "Berlin" },
       { "label": "Studium", "value": "B.Sc. Data Science" },
-      { "label": "Aktuell", "value": "Werkstudent @ DB E&C" },
+      { "label": "Aktuell", "value": "Praktikant @ Tesla" },
       { "label": "Förderung", "value": "Studienstiftung des Deutschen Volkes" }
     ],
     "teasers": {
       "heading": "Entdecken",
       "experience": {
         "title": "Werdegang",
-        "description": "Mein Weg bisher - Arbeit und Bildung als zwei parallele Zeitstränge, von Ahrensburg nach Hamburg, mit Umweg über Ecuador.",
+        "description": "Mein Weg bisher - Arbeit und Bildung als zwei parallele Zeitstränge, von Ahrensburg über Ecuador und Hamburg nach Berlin.",
         "cta": "Zeitstrahl ansehen"
       },
       "projects": {
@@ -63,10 +63,10 @@
   "ExperiencePage": {
     "meta": {
       "title": "Werdegang - Alexander Kranz",
-      "description": "Der Weg von Alexander Kranz: Werkstudent bei der Deutschen Bahn, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und Freiwilligenjahr in Ecuador."
+      "description": "Der Weg von Alexander Kranz: Praktikant bei Tesla, Werkstudent bei der Deutschen Bahn und Otto, B.Sc. Data Science in Hamburg, Stipendium der Studienstiftung und Freiwilligenjahr in Ecuador."
     },
     "heading": "Werdegang",
-    "intro": "Von einem Freiwilligen Jahr in Ecuador bis zu Werkstudentenstellen bei Otto und der Deutschen Bahn - das sind die Stationen, die mich geprägt haben.",
+    "intro": "Von einem Freiwilligen Jahr in Ecuador über Werkstudentenstellen bei Otto und der Deutschen Bahn bis zu meinem Praktikum bei Tesla - das sind die Stationen, die mich geprägt haben.",
     "currentHeading": "Aktuell",
     "threads": {
       "work": "Arbeit",
@@ -74,14 +74,25 @@
     },
     "items": [
       {
+        "thread": "work",
+        "current": true,
+        "date": "seit 2026",
+        "start": "2026-11",
+        "title": "Praktikant",
+        "org": "Tesla",
+        "location": "Grünheide (Mark), Brandenburg",
+        "description": "KI-basierte interne Applikationen.",
+        "tags": ["KI", "Machine Learning"]
+      },
+      {
         "thread": "education",
-        "date": "July 2026",
+        "date": "Juli 2026",
         "start": "2026-07",
         "title": "ISWC 2026",
         "org": "UAH | DLR",
-        "location": "Huntsville, Alabama, USA | Neustrelitz, Germany",
+        "location": "Huntsville, Alabama, USA | Neustrelitz, Deutschland",
         "description": "Summer School zu Weltraumwetter mit Fokus auf Machine Learning und Datenanalyse.",
-        "tags": ["Space Weather", "Research", "Machine Learning"]
+        "tags": ["Space Weather", "Forschung", "Machine Learning"]
       },
       {
         "thread": "work",
@@ -359,7 +370,7 @@
       "items": [
         { "greeting": "Moin!", "name": "Deutsch", "level": "Muttersprache", "levelValue": 5 },
         { "greeting": "Hello!", "name": "Englisch", "level": "Fließend (C1)", "levelValue": 4 },
-        { "greeting": "¡Hola!", "name": "Spanisch", "level": "Konversationssicher (B2)", "levelValue": 3 }
+        { "greeting": "¡Hola!", "name": "Spanisch", "level": "Fließend (C1)", "levelValue": 4 }
       ]
     },
     "marathons": {

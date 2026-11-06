@@ -55,9 +55,9 @@ export async function generateMetadata({
     keywords: [
       "Alexander Kranz",
       "Data Science",
-      "Hamburg",
-      "Werkstudent",
-      "Deutsche Bahn",
+      "Berlin",
+      "Tesla",
+      "Gigafactory Berlin",
       "Studienstiftung",
       "Portfolio",
     ],
